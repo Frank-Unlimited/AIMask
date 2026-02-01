@@ -29,5 +29,9 @@ gradle.properties
 /build.gradle.kts
 /gradle/libs.versions.toml
 
-# captcha ocr
-/captcha
+# captcha ocr - 忽略虚拟环境和模型文件，保留脚本
+/captcha/.venv/
+/captcha/mineru-master/
+/captcha/*.jpg
+/captcha/*.png
+/captcha/ocr_project/result.json
