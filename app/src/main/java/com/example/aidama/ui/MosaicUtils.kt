@@ -70,81 +70,69 @@ object MosaicUtils {
     }
 
     /**
-     * 调用本地OCR工具处理图片
+     * 调用OCR微服务处理图片
      * @param context Android Context
      * @param imageUri 图片URI
      * @return OCR结果JSON字符串，失败返回null
      */
     suspend fun runLocalOcr(context: Context, imageUri: Uri): String? = withContext(Dispatchers.IO) {
         try {
-            // 1. 将图片复制到临时文件（captcha工具需要访问）
+            // OCR服务地址（可配置）
+            val ocrServiceUrl = "http://192.168.1.100:5000/ocr"  // 修改为实际服务器IP
+            
+            // 读取图片数据
             val inputStream = context.contentResolver.openInputStream(imageUri) ?: return@withContext null
-            val tempImageFile = File(context.cacheDir, "temp_ocr_${System.currentTimeMillis()}.jpg")
-            tempImageFile.outputStream().use { output ->
-                inputStream.copyTo(output)
-            }
+            val imageBytes = inputStream.readBytes()
             inputStream.close()
-
-            // 2. 构建Python命令
-            val captchaPath = "F:\\AutoMark\\AI-dama\\captcha"
-            val pythonExe = "$captchaPath\\.venv\\Scripts\\python.exe"
-            val scriptPath = "$captchaPath\\ocr_project\\run_ocr.py"
-            val resultPath = "$captchaPath\\ocr_project\\result.json"
-
-            // 验证文件存在
-            if (!File(pythonExe).exists()) {
-                android.util.Log.e("MosaicUtils", "Python executable not found: $pythonExe")
-                return@withContext null
-            }
-            if (!File(scriptPath).exists()) {
-                android.util.Log.e("MosaicUtils", "OCR script not found: $scriptPath")
-                return@withContext null
-            }
-
-            // 3. 执行Python脚本（通过命令行参数传递图片路径）
-            val processBuilder = ProcessBuilder(
-                pythonExe, 
-                scriptPath,
-                "--image", tempImageFile.absolutePath
-            )
-            processBuilder.directory(File(captchaPath))
-            processBuilder.redirectErrorStream(true)
-
-            val process = processBuilder.start()
             
-            // 读取输出（用于调试）
-            val output = StringBuilder()
-            BufferedReader(InputStreamReader(process.inputStream)).use { reader ->
-                var line: String?
-                while (reader.readLine().also { line = it } != null) {
-                    output.append(line).append("\n")
-                    android.util.Log.d("OCR_OUTPUT", line ?: "")
-                }
-            }
-
-            // 等待进程完成（超时30秒）
-            val exitCode = process.waitFor()
+            // 构建multipart请求
+            val boundary = "----WebKitFormBoundary${System.currentTimeMillis()}"
+            val lineEnd = "\r\n"
+            val twoHyphens = "--"
             
-            // 清理临时文件
-            tempImageFile.delete()
-
-            if (exitCode != 0) {
-                android.util.Log.e("MosaicUtils", "OCR process failed with exit code: $exitCode")
-                android.util.Log.e("MosaicUtils", "Output: $output")
-                return@withContext null
+            val url = java.net.URL(ocrServiceUrl)
+            val connection = url.openConnection() as java.net.HttpURLConnection
+            connection.doOutput = true
+            connection.doInput = true
+            connection.useCaches = false
+            connection.requestMethod = "POST"
+            connection.setRequestProperty("Connection", "Keep-Alive")
+            connection.setRequestProperty("Content-Type", "multipart/form-data; boundary=$boundary")
+            connection.connectTimeout = 30000
+            connection.readTimeout = 60000
+            
+            // 写入请求体
+            val outputStream = connection.outputStream
+            val writer = java.io.DataOutputStream(outputStream)
+            
+            writer.writeBytes(twoHyphens + boundary + lineEnd)
+            writer.writeBytes("Content-Disposition: form-data; name=\"image\"; filename=\"image.jpg\"$lineEnd")
+            writer.writeBytes("Content-Type: image/jpeg$lineEnd")
+            writer.writeBytes(lineEnd)
+            writer.write(imageBytes)
+            writer.writeBytes(lineEnd)
+            writer.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd)
+            writer.flush()
+            writer.close()
+            
+            // 读取响应
+            val responseCode = connection.responseCode
+            if (responseCode == java.net.HttpURLConnection.HTTP_OK) {
+                val response = connection.inputStream.bufferedReader().use { it.readText() }
+                android.util.Log.d("MosaicUtils", "OCR service responded successfully")
+                response
+            } else {
+                val errorResponse = connection.errorStream?.bufferedReader()?.use { it.readText() }
+                android.util.Log.e("MosaicUtils", "OCR service error: $responseCode - $errorResponse")
+                null
             }
-
-            // 4. 读取result.json
-            val resultFile = File(resultPath)
-            if (!resultFile.exists()) {
-                android.util.Log.e("MosaicUtils", "Result file not found: $resultPath")
-                return@withContext null
-            }
-
-            val jsonResult = resultFile.readText()
-            android.util.Log.d("MosaicUtils", "OCR completed successfully")
-            jsonResult
-
+            
+        } catch (e: java.net.SocketTimeoutException) {
+            android.util.Log.e("MosaicUtils", "OCR service timeout: ${e.message}")
+            null
+        } catch (e: java.net.ConnectException) {
+            android.util.Log.e("MosaicUtils", "Cannot connect to OCR service: ${e.message}")
+            null
         } catch (e: Exception) {
             android.util.Log.e("MosaicUtils", "OCR error: ${e.message}", e)
             null
