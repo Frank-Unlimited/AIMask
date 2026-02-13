@@ -1,0 +1,38 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+# Ignore local wrapper and platform-specific runner scripts and wrapper properties
+gradlew.bat
+gradlew
+gradle/wrapper/gradle-wrapper.properties
+gradle.properties
+# Ignore IDE project files and other local configs
+.idea/
+.idea/*
+# Keep .gitignore itself tracked
+!.gitignore
+
+# Ignore local build files and version catalog
+/app/build.gradle.kts
+/build.gradle.kts
+/gradle/libs.versions.toml
+
+# captcha ocr - 忽略虚拟环境和模型文件，保留脚本
+/captcha/.venv/
+/captcha/mineru-master/
+/captcha/*.jpg
+/captcha/*.png
+/captcha/ocr_project/result.json
+/captcha/.env
