@@ -1,0 +1,12 @@
+# OCR微服务依赖
+flask>=3.0.0
+flask-cors>=4.0.0
+numpy>=1.21.6
+opencv-python>=4.8.0
+torch>=2.2.2
+pillow>=11.0.0
+
+# mineru依赖（从pyproject.toml提取）
+ultralytics>=8.3.48
+transformers>=4.49.0
+fast-langdetect>=0.2.3
