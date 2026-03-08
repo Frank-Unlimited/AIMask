@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">慧码 AI</string>
+
+    <!-- 界面文字 -->
+    <string name="ai_hint">按住说话，或输入指令...</string>
+    <string name="batch_confirm_question">检测到多张相似图片，是否批量处理？</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+
+    <!-- 弹窗文字 -->
+    <string name="generate_rules_title">打码策略生成</string>
+    <string name="apply_rules">立即应用</string>
+    <string name="go_to_modify">前往修改</string>
+    <string name="ai_analysis_notice">AI 正在分析图片内容...</string>
+</resources>

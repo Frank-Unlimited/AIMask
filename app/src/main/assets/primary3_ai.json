@@ -1,0 +1,1909 @@
+{
+  "image_metadata": {
+    "dimensions": {
+      "width": 1264,
+      "height": 2780
+    }
+  },
+  "text_regions": [
+    {
+      "text": "22",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 80,
+            "y": 55
+          },
+          {
+            "x": 123,
+            "y": 55
+          },
+          {
+            "x": 123,
+            "y": 102
+          },
+          {
+            "x": 80,
+            "y": 102
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 127,
+            "y": 55
+          },
+          {
+            "x": 132,
+            "y": 55
+          },
+          {
+            "x": 132,
+            "y": 102
+          },
+          {
+            "x": 127,
+            "y": 102
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "42",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 135,
+            "y": 55
+          },
+          {
+            "x": 176,
+            "y": 55
+          },
+          {
+            "x": 176,
+            "y": 102
+          },
+          {
+            "x": 135,
+            "y": 102
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "0.13",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 885,
+            "y": 42
+          },
+          {
+            "x": 944,
+            "y": 42
+          },
+          {
+            "x": 944,
+            "y": 76
+          },
+          {
+            "x": 885,
+            "y": 76
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "72",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 1124,
+            "y": 55
+          },
+          {
+            "x": 1174,
+            "y": 55
+          },
+          {
+            "x": 1174,
+            "y": 97
+          },
+          {
+            "x": 1124,
+            "y": 97
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "KB/S",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 892,
+            "y": 76
+          },
+          {
+            "x": 941,
+            "y": 76
+          },
+          {
+            "x": 941,
+            "y": 102
+          },
+          {
+            "x": 892,
+            "y": 102
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "[录用通知书]欢迎加入",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 77,
+            "y": 354
+          },
+          {
+            "x": 741,
+            "y": 354
+          },
+          {
+            "x": 741,
+            "y": 417
+          },
+          {
+            "x": 77,
+            "y": 417
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "迅达传媒",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 743,
+            "y": 354
+          },
+          {
+            "x": 995,
+            "y": 354
+          },
+          {
+            "x": 995,
+            "y": 417
+          },
+          {
+            "x": 743,
+            "y": 417
+          }
+        ]
+      },
+      "type": "名称",
+      "association_id": "name"
+    },
+    {
+      "text": "ZSC",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 51,
+            "y": 471
+          },
+          {
+            "x": 107,
+            "y": 471
+          },
+          {
+            "x": 107,
+            "y": 513
+          },
+          {
+            "x": 51,
+            "y": 513
+          }
+        ]
+      },
+      "type": "名称",
+      "association_id": "name"
+    },
+    {
+      "text": "详情",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 1114,
+            "y": 463
+          },
+          {
+            "x": 1210,
+            "y": 463
+          },
+          {
+            "x": 1210,
+            "y": 513
+          },
+          {
+            "x": 1114,
+            "y": 513
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "赵强先生",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 50,
+            "y": 613
+          },
+          {
+            "x": 239,
+            "y": 613
+          },
+          {
+            "x": 239,
+            "y": 659
+          },
+          {
+            "x": 50,
+            "y": 659
+          }
+        ]
+      },
+      "type": "名称",
+      "association_id": "name"
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 259,
+            "y": 628
+          },
+          {
+            "x": 264,
+            "y": 628
+          },
+          {
+            "x": 264,
+            "y": 652
+          },
+          {
+            "x": 259,
+            "y": 652
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "您好!",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 54,
+            "y": 745
+          },
+          {
+            "x": 166,
+            "y": 745
+          },
+          {
+            "x": 166,
+            "y": 791
+          },
+          {
+            "x": 54,
+            "y": 791
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "非常荣幸地通知您",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 52,
+            "y": 809
+          },
+          {
+            "x": 414,
+            "y": 809
+          },
+          {
+            "x": 414,
+            "y": 860
+          },
+          {
+            "x": 52,
+            "y": 860
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ",",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 434,
+            "y": 846
+          },
+          {
+            "x": 437,
+            "y": 846
+          },
+          {
+            "x": 437,
+            "y": 853
+          },
+          {
+            "x": 434,
+            "y": 853
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "经过面试选拔",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 466,
+            "y": 811
+          },
+          {
+            "x": 739,
+            "y": 811
+          },
+          {
+            "x": 739,
+            "y": 856
+          },
+          {
+            "x": 466,
+            "y": 856
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ",",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 756,
+            "y": 846
+          },
+          {
+            "x": 759,
+            "y": 846
+          },
+          {
+            "x": 759,
+            "y": 853
+          },
+          {
+            "x": 756,
+            "y": 853
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "您已被我司正式录",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 790,
+            "y": 811
+          },
+          {
+            "x": 1153,
+            "y": 811
+          },
+          {
+            "x": 1153,
+            "y": 856
+          },
+          {
+            "x": 790,
+            "y": 856
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "用。欢迎您加入",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 56,
+            "y": 877
+          },
+          {
+            "x": 370,
+            "y": 877
+          },
+          {
+            "x": 370,
+            "y": 922
+          },
+          {
+            "x": 56,
+            "y": 922
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "迅达传媒有限公司",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 372,
+            "y": 877
+          },
+          {
+            "x": 732,
+            "y": 877
+          },
+          {
+            "x": 732,
+            "y": 922
+          },
+          {
+            "x": 372,
+            "y": 922
+          }
+        ]
+      },
+      "type": "名称",
+      "association_id": "name"
+    },
+    {
+      "text": "大家庭!",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 743,
+            "y": 877
+          },
+          {
+            "x": 898,
+            "y": 877
+          },
+          {
+            "x": 898,
+            "y": 922
+          },
+          {
+            "x": 743,
+            "y": 922
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "请您携带以下资料",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 52,
+            "y": 939
+          },
+          {
+            "x": 416,
+            "y": 939
+          },
+          {
+            "x": 416,
+            "y": 995
+          },
+          {
+            "x": 52,
+            "y": 995
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 433,
+            "y": 939
+          },
+          {
+            "x": 439,
+            "y": 939
+          },
+          {
+            "x": 439,
+            "y": 995
+          },
+          {
+            "x": 433,
+            "y": 995
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "于",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 469,
+            "y": 939
+          },
+          {
+            "x": 504,
+            "y": 939
+          },
+          {
+            "x": 504,
+            "y": 995
+          },
+          {
+            "x": 469,
+            "y": 995
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "下周一上午9:30",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 516,
+            "y": 939
+          },
+          {
+            "x": 837,
+            "y": 939
+          },
+          {
+            "x": 837,
+            "y": 995
+          },
+          {
+            "x": 516,
+            "y": 995
+          }
+        ]
+      },
+      "type": "邮件内容",
+      "association_id": "content"
+    },
+    {
+      "text": "前往公司办理入职",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 840,
+            "y": 939
+          },
+          {
+            "x": 1201,
+            "y": 939
+          },
+          {
+            "x": 1201,
+            "y": 995
+          },
+          {
+            "x": 840,
+            "y": 995
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "手续",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 55,
+            "y": 1010
+          },
+          {
+            "x": 143,
+            "y": 1010
+          },
+          {
+            "x": 143,
+            "y": 1056
+          },
+          {
+            "x": 55,
+            "y": 1056
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 158,
+            "y": 1024
+          },
+          {
+            "x": 164,
+            "y": 1024
+          },
+          {
+            "x": 164,
+            "y": 1047
+          },
+          {
+            "x": 158,
+            "y": 1047
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "1.个人身份证明",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 58,
+            "y": 1140
+          },
+          {
+            "x": 362,
+            "y": 1140
+          },
+          {
+            "x": 362,
+            "y": 1187
+          },
+          {
+            "x": 58,
+            "y": 1187
+          }
+        ]
+      },
+      "type": "邮件内容",
+      "association_id": "content"
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 383,
+            "y": 1155
+          },
+          {
+            "x": 387,
+            "y": 1155
+          },
+          {
+            "x": 387,
+            "y": 1179
+          },
+          {
+            "x": 383,
+            "y": 1179
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "身份证原件及复印件",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 57,
+            "y": 1205
+          },
+          {
+            "x": 461,
+            "y": 1205
+          },
+          {
+            "x": 461,
+            "y": 1253
+          },
+          {
+            "x": 57,
+            "y": 1253
+          }
+        ]
+      },
+      "type": "个人身份证明",
+      "association_id": "zhengjian"
+    },
+    {
+      "text": "(",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 491,
+            "y": 1221
+          },
+          {
+            "x": 497,
+            "y": 1221
+          },
+          {
+            "x": 497,
+            "y": 1245
+          },
+          {
+            "x": 491,
+            "y": 1245
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "身份证号",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 516,
+            "y": 1206
+          },
+          {
+            "x": 691,
+            "y": 1206
+          },
+          {
+            "x": 691,
+            "y": 1251
+          },
+          {
+            "x": 516,
+            "y": 1251
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 708,
+            "y": 1221
+          },
+          {
+            "x": 714,
+            "y": 1221
+          },
+          {
+            "x": 714,
+            "y": 1245
+          },
+          {
+            "x": 708,
+            "y": 1245
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "11010519950824332X",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 740,
+            "y": 1208
+          },
+          {
+            "x": 1158,
+            "y": 1208
+          },
+          {
+            "x": 1158,
+            "y": 1253
+          },
+          {
+            "x": 740,
+            "y": 1253
+          }
+        ]
+      },
+      "type": "身份证号",
+      "association_id": "shenfenzhenghao"
+    },
+    {
+      "text": "户口本首页及本人页复印件",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 57,
+            "y": 1269
+          },
+          {
+            "x": 600,
+            "y": 1269
+          },
+          {
+            "x": 600,
+            "y": 1319
+          },
+          {
+            "x": 57,
+            "y": 1319
+          }
+        ]
+      },
+      "type": "个人身份证明",
+      "association_id": "shenfenzhengjian"
+    },
+    {
+      "text": "2.学历证明",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 54,
+            "y": 1404
+          },
+          {
+            "x": 270,
+            "y": 1404
+          },
+          {
+            "x": 270,
+            "y": 1449
+          },
+          {
+            "x": 54,
+            "y": 1449
+          }
+        ]
+      },
+      "type": "邮件内容",
+      "association_id": "content"
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 291,
+            "y": 1417
+          },
+          {
+            "x": 295,
+            "y": 1417
+          },
+          {
+            "x": 295,
+            "y": 1441
+          },
+          {
+            "x": 291,
+            "y": 1441
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "最高学历毕业证、学位证原件",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 52,
+            "y": 1467
+          },
+          {
+            "x": 643,
+            "y": 1467
+          },
+          {
+            "x": 643,
+            "y": 1516
+          },
+          {
+            "x": 52,
+            "y": 1516
+          }
+        ]
+      },
+      "type": "学历证明",
+      "association_id": "xuelizhengming"
+    },
+    {
+      "text": "3.入职体检报告",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 53,
+            "y": 1600
+          },
+          {
+            "x": 364,
+            "y": 1600
+          },
+          {
+            "x": 364,
+            "y": 1643
+          },
+          {
+            "x": 53,
+            "y": 1643
+          }
+        ]
+      },
+      "type": "体检报告",
+      "association_id": "content"
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 383,
+            "y": 1613
+          },
+          {
+            "x": 387,
+            "y": 1613
+          },
+          {
+            "x": 387,
+            "y": 1637
+          },
+          {
+            "x": 383,
+            "y": 1637
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "请前往",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 51,
+            "y": 1664
+          },
+          {
+            "x": 185,
+            "y": 1664
+          },
+          {
+            "x": 185,
+            "y": 1712
+          },
+          {
+            "x": 51,
+            "y": 1712
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "北京市朝阳区建国路88号慈铭体检中心",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 189,
+            "y": 1664
+          },
+          {
+            "x": 966,
+            "y": 1664
+          },
+          {
+            "x": 966,
+            "y": 1712
+          },
+          {
+            "x": 189,
+            "y": 1712
+          }
+        ]
+      },
+      "type": "邮件内容",
+      "association_id": "content"
+    },
+
+    {
+      "text": "进行入职体",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 971,
+            "y": 1664
+          },
+          {
+            "x": 1198,
+            "y": 1664
+          },
+          {
+            "x": 1198,
+            "y": 1712
+          },
+          {
+            "x": 971,
+            "y": 1712
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "检。",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 50,
+            "y": 1732
+          },
+          {
+            "x": 119,
+            "y": 1732
+          },
+          {
+            "x": 119,
+            "y": 1776
+          },
+          {
+            "x": 50,
+            "y": 1776
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "您的入职信息确认如下",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 55,
+            "y": 1861
+          },
+          {
+            "x": 493,
+            "y": 1861
+          },
+          {
+            "x": 493,
+            "y": 1913
+          },
+          {
+            "x": 55,
+            "y": 1913
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 493,
+            "y": 1861
+          },
+          {
+            "x": 528,
+            "y": 1861
+          },
+          {
+            "x": 528,
+            "y": 1913
+          },
+          {
+            "x": 493,
+            "y": 1913
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "职位",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 52,
+            "y": 1933
+          },
+          {
+            "x": 143,
+            "y": 1933
+          },
+          {
+            "x": 143,
+            "y": 1972
+          },
+          {
+            "x": 52,
+            "y": 1972
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 157,
+            "y": 1943
+          },
+          {
+            "x": 164,
+            "y": 1943
+          },
+          {
+            "x": 164,
+            "y": 1967
+          },
+          {
+            "x": 157,
+            "y": 1967
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "资深后端开发工程师",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 203,
+            "y": 1928
+          },
+          {
+            "x": 606,
+            "y": 1928
+          },
+          {
+            "x": 606,
+            "y": 1975
+          },
+          {
+            "x": 203,
+            "y": 1975
+          }
+        ]
+      },
+      "type": "职位",
+      "association_id": "zhiwei"
+    },
+    {
+      "text": "部门",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 54,
+            "y": 1995
+          },
+          {
+            "x": 137,
+            "y": 1995
+          },
+          {
+            "x": 137,
+            "y": 2041
+          },
+          {
+            "x": 54,
+            "y": 2041
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 158,
+            "y": 2009
+          },
+          {
+            "x": 164,
+            "y": 2009
+          },
+          {
+            "x": 164,
+            "y": 2034
+          },
+          {
+            "x": 158,
+            "y": 2033
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "技术研发部",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 196,
+            "y": 1994
+          },
+          {
+            "x": 427,
+            "y": 1994
+          },
+          {
+            "x": 427,
+            "y": 2041
+          },
+          {
+            "x": 196,
+            "y": 2041
+          }
+        ]
+      },
+      "type": "部门",
+      "association_id": "bumen"
+    },
+    {
+      "text": "基本薪资",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 55,
+            "y": 2059
+          },
+          {
+            "x": 229,
+            "y": 2059
+          },
+          {
+            "x": 229,
+            "y": 2105
+          },
+          {
+            "x": 55,
+            "y": 2105
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 249,
+            "y": 2075
+          },
+          {
+            "x": 254,
+            "y": 2075
+          },
+          {
+            "x": 254,
+            "y": 2099
+          },
+          {
+            "x": 249,
+            "y": 2099
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "税前25,000元/月",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 290,
+            "y": 2061
+          },
+          {
+            "x": 630,
+            "y": 2061
+          },
+          {
+            "x": 630,
+            "y": 2105
+          },
+          {
+            "x": 290,
+            "y": 2105
+          }
+        ]
+      },
+      "type": "薪资",
+      "association_id": "xinzi"
+    },
+    {
+      "text": "如有任何疑问",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 52,
+            "y": 2122
+          },
+          {
+            "x": 320,
+            "y": 2122
+          },
+          {
+            "x": 320,
+            "y": 2170
+          },
+          {
+            "x": 52,
+            "y": 2170
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 341,
+            "y": 2160
+          },
+          {
+            "x": 345,
+            "y": 2160
+          },
+          {
+            "x": 345,
+            "y": 2167
+          },
+          {
+            "x": 341,
+            "y": 2167
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "请随时致电或回复邮件。期待与您共事!",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 375,
+            "y": 2124
+          },
+          {
+            "x": 1175,
+            "y": 2124
+          },
+          {
+            "x": 1175,
+            "y": 2172
+          },
+          {
+            "x": 375,
+            "y": 2172
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "此致",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 51,
+            "y": 2194
+          },
+          {
+            "x": 143,
+            "y": 2194
+          },
+          {
+            "x": 143,
+            "y": 2233
+          },
+          {
+            "x": 51,
+            "y": 2233
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "HR",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 980,
+            "y": 2266
+          },
+          {
+            "x": 1027,
+            "y": 2266
+          },
+          {
+            "x": 1027,
+            "y": 2298
+          },
+          {
+            "x": 980,
+            "y": 2298
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 1041,
+            "y": 2270
+          },
+          {
+            "x": 1045,
+            "y": 2270
+          },
+          {
+            "x": 1046,
+            "y": 2299
+          },
+          {
+            "x": 1041,
+            "y": 2299
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "张女士",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 1075,
+            "y": 2259
+          },
+          {
+            "x": 1204,
+            "y": 2259
+          },
+          {
+            "x": 1204,
+            "y": 2300
+          },
+          {
+            "x": 1075,
+            "y": 2300
+          }
+        ]
+      },
+      "type": "HR",
+      "association_id": "HR"
+    },
+    {
+      "text": "迅达传媒人力资源部",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 795,
+            "y": 2322
+          },
+          {
+            "x": 1208,
+            "y": 2322
+          },
+          {
+            "x": 1208,
+            "y": 2369
+          },
+          {
+            "x": 795,
+            "y": 2369
+          }
+        ]
+      },
+      "type": "发件人部门",
+      "association_id": "fajianrenbumen"
+    },
+    {
+      "text": "联系电话",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 547,
+            "y": 2394
+          },
+          {
+            "x": 785,
+            "y": 2394
+          },
+          {
+            "x": 785,
+            "y": 2453
+          },
+          {
+            "x": 547,
+            "y": 2453
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 802,
+            "y": 2414
+          },
+          {
+            "x": 809,
+            "y": 2414
+          },
+          {
+            "x": 809,
+            "y": 2439
+          },
+          {
+            "x": 802,
+            "y": 2439
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "138-1234-5678",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 956,
+            "y": 2398
+          },
+          {
+            "x": 1208,
+            "y": 2398
+          },
+          {
+            "x": 1208,
+            "y": 2450
+          },
+          {
+            "x": 856,
+            "y": 2450
+          }
+        ]
+      },
+      "type": "发件人电话号码",
+      "association_id": "fajianrendianhuahaoma"
+    },
+    {
+      "text": "2024年05月20日",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 890,
+            "y": 2475
+          },
+          {
+            "x": 1198,
+            "y": 2475
+          },
+          {
+            "x": 1198,
+            "y": 2519
+          },
+          {
+            "x": 890,
+            "y": 2519
+          }
+        ]
+      },
+      "type": "发件时间",
+      "association_id": "fajianshijian"
+    },
+    {
+      "text": "..●",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 1073,
+            "y": 2638
+          },
+          {
+            "x": 1135,
+            "y": 2638
+          },
+          {
+            "x": 1135,
+            "y": 2648
+          },
+          {
+            "x": 1073,
+            "y": 2648
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "删除",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 120,
+            "y": 2710
+          },
+          {
+            "x": 195,
+            "y": 2710
+          },
+          {
+            "x": 195,
+            "y": 2743
+          },
+          {
+            "x": 120,
+            "y": 2743
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "分享",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 434,
+            "y": 2705
+          },
+          {
+            "x": 507,
+            "y": 2705
+          },
+          {
+            "x": 507,
+            "y": 2746
+          },
+          {
+            "x": 434,
+            "y": 2746
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "回复转发",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 715,
+            "y": 2705
+          },
+          {
+            "x": 863,
+            "y": 2705
+          },
+          {
+            "x": 863,
+            "y": 2745
+          },
+          {
+            "x": 715,
+            "y": 2745
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "更多",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 1070,
+            "y": 2707
+          },
+          {
+            "x": 1134,
+            "y": 2707
+          },
+          {
+            "x": 1134,
+            "y": 2745
+          },
+          {
+            "x": 1070,
+            "y": 2745
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    }
+  ]
+}

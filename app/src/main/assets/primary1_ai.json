@@ -1,0 +1,1596 @@
+{
+  "image_metadata": {
+    "dimensions": {
+      "width": 1080,
+      "height": 2941
+    }
+  },
+  "text_regions": [
+    {
+      "text": "14:43",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 57,
+            "y": 37
+          },
+          {
+            "x": 162,
+            "y": 37
+          },
+          {
+            "x": 162,
+            "y": 74
+          },
+          {
+            "x": 57,
+            "y": 74
+          }
+        ]
+      },
+      "type": "时间",
+      "association_id": null
+    },
+    {
+      "text": "13.0 5G",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 734,
+            "y": 37
+          },
+          {
+            "x": 834,
+            "y": 37
+          },
+          {
+            "x": 834,
+            "y": 57
+          },
+          {
+            "x": 734,
+            "y": 57
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "5G",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 834,
+            "y": 37
+          },
+          {
+            "x": 876,
+            "y": 37
+          },
+          {
+            "x": 876,
+            "y": 57
+          },
+          {
+            "x": 834,
+            "y": 57
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "KB/s",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 734,
+            "y": 51
+          },
+          {
+            "x": 895,
+            "y": 51
+          },
+          {
+            "x": 895,
+            "y": 75
+          },
+          {
+            "x": 734,
+            "y": 75
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "发件人:",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 12,
+            "y": 285
+          },
+          {
+            "x": 162,
+            "y": 285
+          },
+          {
+            "x": 162,
+            "y": 330
+          },
+          {
+            "x": 12,
+            "y": 330
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "辰",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 202,
+            "y": 288
+          },
+          {
+            "x": 249,
+            "y": 288
+          },
+          {
+            "x": 249,
+            "y": 322
+          },
+          {
+            "x": 202,
+            "y": 322
+          }
+        ]
+      },
+      "type": "名称",
+      "association_id": "chen"
+    },
+    {
+      "text": "详情",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 986,
+            "y": 285
+          },
+          {
+            "x": 1062,
+            "y": 282
+          },
+          {
+            "x": 1063,
+            "y": 323
+          },
+          {
+            "x": 987,
+            "y": 326
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "确认",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 12,
+            "y": 386
+          },
+          {
+            "x": 109,
+            "y": 386
+          },
+          {
+            "x": 109,
+            "y": 439
+          },
+          {
+            "x": 12,
+            "y": 439
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "广告设计方案",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 109,
+            "y": 386
+          },
+          {
+            "x": 405,
+            "y": 386
+          },
+          {
+            "x": 405,
+            "y": 439
+          },
+          {
+            "x": 109,
+            "y": 439
+          }
+        ]
+      },
+      "type": "会议内容",
+      "association_id": "content"
+    },
+    {
+      "text": "2026-01-22 14:41:01",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 10,
+            "y": 452
+          },
+          {
+            "x": 379,
+            "y": 452
+          },
+          {
+            "x": 379,
+            "y": 489
+          },
+          {
+            "x": 10,
+            "y": 489
+          }
+        ]
+      },
+      "type": "时间",
+      "association_id": "time"
+    },
+    {
+      "text": "尊敬的",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 630
+          },
+          {
+            "x": 129,
+            "y": 630
+          },
+          {
+            "x": 129,
+            "y": 670
+          },
+          {
+            "x": 18,
+            "y": 670
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "启迪科技",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 129,
+            "y": 630
+          },
+          {
+            "x": 277,
+            "y": 630
+          },
+          {
+            "x": 277,
+            "y": 670
+          },
+          {
+            "x": 129,
+            "y": 670
+          }
+        ]
+      },
+      "type": "关联方",
+      "association_id": "guanlianfang"
+    },
+    {
+      "text": "团队:",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 277,
+            "y": 630
+          },
+          {
+            "x": 361,
+            "y": 630
+          },
+          {
+            "x": 361,
+            "y": 670
+          },
+          {
+            "x": 277,
+            "y": 670
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "您好!",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 730
+          },
+          {
+            "x": 113,
+            "y": 730
+          },
+          {
+            "x": 113,
+            "y": 770
+          },
+          {
+            "x": 18,
+            "y": 770
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "希望这封邮件能找到您一切安好。我写信是为了确认我们在上次",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 787
+          },
+          {
+            "x": 1048,
+            "y": 787
+          },
+          {
+            "x": 1048,
+            "y": 826
+          },
+          {
+            "x": 18,
+            "y": 826
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "会议中讨论的",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 841
+          },
+          {
+            "x": 239,
+            "y": 838
+          },
+          {
+            "x": 239,
+            "y": 881
+          },
+          {
+            "x": 18,
+            "y": 884
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "广告设计",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 239,
+            "y": 841
+          },
+          {
+            "x": 387,
+            "y": 838
+          },
+          {
+            "x": 387,
+            "y": 881
+          },
+          {
+            "x": 239,
+            "y": 884
+          }
+        ]
+      },
+      "type": "业务隐私",
+      "association_id": "yewuyinsi"
+    },
+    {
+      "text": "方案的细节。贵团队的洞察和建议对于我",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 387,
+            "y": 841
+          },
+          {
+            "x": 1048,
+            "y": 838
+          },
+          {
+            "x": 1049,
+            "y": 881
+          },
+          {
+            "x": 387,
+            "y": 884
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "们",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 895
+          },
+          {
+            "x": 55,
+            "y": 895
+          },
+          {
+            "x": 55,
+            "y": 937
+          },
+          {
+            "x": 18,
+            "y": 937
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "广告活动",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 59,
+            "y": 895
+          },
+          {
+            "x": 202,
+            "y": 895
+          },
+          {
+            "x": 202,
+            "y": 937
+          },
+          {
+            "x": 59,
+            "y": 937
+          }
+        ]
+      },
+      "type": "会议内容",
+      "association_id": "content"
+    },
+    {
+      "text": "的方向非常宝贵。",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 206,
+            "y": 895
+          },
+          {
+            "x": 478,
+            "y": 895
+          },
+          {
+            "x": 478,
+            "y": 937
+          },
+          {
+            "x": 206,
+            "y": 937
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "根据我们的讨论，建议的设计将采用",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 996
+          },
+          {
+            "x": 606,
+            "y": 996
+          },
+          {
+            "x": 606,
+            "y": 1037
+          },
+          {
+            "x": 18,
+            "y": 1037
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "生动的色彩和现代字体",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 608,
+            "y": 996
+          },
+          {
+            "x": 976,
+            "y": 996
+          },
+          {
+            "x": 976,
+            "y": 1037
+          },
+          {
+            "x": 608,
+            "y": 1037
+          }
+        ]
+      },
+      "type": "业务隐私",
+      "association_id": "yewuyinsi"
+    },
+    {
+      "text": "，旨",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 984,
+            "y": 996
+          },
+          {
+            "x": 1048,
+            "y": 996
+          },
+          {
+            "x": 1048,
+            "y": 1037
+          },
+          {
+            "x": 984,
+            "y": 1037
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "在吸引我们的目标观众的注意。我们计划在所有",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1051
+          },
+          {
+            "x": 794,
+            "y": 1051
+          },
+          {
+            "x": 794,
+            "y": 1092
+          },
+          {
+            "x": 18,
+            "y": 1092
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "视觉元素",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 794,
+            "y": 1051
+          },
+          {
+            "x": 936,
+            "y": 1051
+          },
+          {
+            "x": 936,
+            "y": 1092
+          },
+          {
+            "x": 794,
+            "y": 1092
+          }
+        ]
+      },
+      "type": "业务隐私",
+      "association_id": "yewuyinsi"
+    },
+    {
+      "text": "中使用",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 940,
+            "y": 1051
+          },
+          {
+            "x": 1048,
+            "y": 1051
+          },
+          {
+            "x": 1048,
+            "y": 1092
+          },
+          {
+            "x": 940,
+            "y": 1092
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "标语“创造无限可能”",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1107
+          },
+          {
+            "x": 355,
+            "y": 1107
+          },
+          {
+            "x": 355,
+            "y": 1151
+          },
+          {
+            "x": 18,
+            "y": 1151
+          }
+        ]
+      },
+      "type": "业务隐私",
+      "association_id": "yewuyinsi"
+    },
+    {
+      "text": "，以保持一致的品牌信息。此外，布局将优",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 355,
+            "y": 1107
+          },
+          {
+            "x": 1054,
+            "y": 1107
+          },
+          {
+            "x": 1054,
+            "y": 1151
+          },
+          {
+            "x": 355,
+            "y": 1151
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "先考虑",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1162
+          },
+          {
+            "x": 129,
+            "y": 1162
+          },
+          {
+            "x": 129,
+            "y": 1203
+          },
+          {
+            "x": 18,
+            "y": 1203
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "清晰和影响力，重要信息将被突出显示",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 132,
+            "y": 1162
+          },
+          {
+            "x": 753,
+            "y": 1162
+          },
+          {
+            "x": 753,
+            "y": 1203
+          },
+          {
+            "x": 132,
+            "y": 1203
+          }
+        ]
+      },
+      "type": "业务隐私",
+      "association_id": "yewuyinsi"
+    },
+    {
+      "text": "，确保其立即引人",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 753,
+            "y": 1162
+          },
+          {
+            "x": 1048,
+            "y": 1162
+          },
+          {
+            "x": 1048,
+            "y": 1203
+          },
+          {
+            "x": 753,
+            "y": 1203
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "注目。",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1218
+          },
+          {
+            "x": 110,
+            "y": 1218
+          },
+          {
+            "x": 110,
+            "y": 1260
+          },
+          {
+            "x": 18,
+            "y": 1260
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "我们已经整合了贵公司",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1319
+          },
+          {
+            "x": 384,
+            "y": 1319
+          },
+          {
+            "x": 384,
+            "y": 1360
+          },
+          {
+            "x": 18,
+            "y": 1360
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "李华经理",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 389,
+            "y": 1319
+          },
+          {
+            "x": 533,
+            "y": 1319
+          },
+          {
+            "x": 533,
+            "y": 1360
+          },
+          {
+            "x": 389,
+            "y": 1360
+          }
+        ]
+      },
+      "type": "关联方",
+      "association_id": "guanlianfang"
+    },
+    {
+      "text": "的反馈，特别是关于",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 537,
+            "y": 1319
+          },
+          {
+            "x": 863,
+            "y": 1319
+          },
+          {
+            "x": 863,
+            "y": 1360
+          },
+          {
+            "x": 537,
+            "y": 1360
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "布局调整",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 866,
+            "y": 1319
+          },
+          {
+            "x": 1010,
+            "y": 1319
+          },
+          {
+            "x": 1010,
+            "y": 1360
+          },
+          {
+            "x": 866,
+            "y": 1360
+          }
+        ]
+      },
+      "type": "业务隐私",
+      "association_id": " yewuyinsi"
+    },
+    {
+      "text": "的",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 1015,
+            "y": 1319
+          },
+          {
+            "x": 1048,
+            "y": 1319
+          },
+          {
+            "x": 1048,
+            "y": 1360
+          },
+          {
+            "x": 1015,
+            "y": 1360
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "建议，我们相信这将增强活动的整体效果。请",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1372
+          },
+          {
+            "x": 754,
+            "y": 1372
+          },
+          {
+            "x": 754,
+            "y": 1416
+          },
+          {
+            "x": 18,
+            "y": 1416
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "李经理",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 754,
+            "y": 1372
+          },
+          {
+            "x": 861,
+            "y": 1372
+          },
+          {
+            "x": 861,
+            "y": 1416
+          },
+          {
+            "x": 754,
+            "y": 1416
+          }
+        ]
+      },
+      "type": "关联方",
+      "association_id": "guanlianfang"
+    },
+    {
+      "text": "审阅附加的",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 866,
+            "y": 1372
+          },
+          {
+            "x": 1048,
+            "y": 1372
+          },
+          {
+            "x": 1048,
+            "y": 1416
+          },
+          {
+            "x": 866,
+            "y": 1416
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "草案，并确认是否符合",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1427
+          },
+          {
+            "x": 387,
+            "y": 1427
+          },
+          {
+            "x": 387,
+            "y": 1472
+          },
+          {
+            "x": 18,
+            "y": 1472
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "启迪科技",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 390,
+            "y": 1427
+          },
+          {
+            "x": 534,
+            "y": 1427
+          },
+          {
+            "x": 534,
+            "y": 1472
+          },
+          {
+            "x": 390,
+            "y": 1472
+          }
+        ]
+      },
+      "type": "关联方",
+      "association_id": "guanlianfang"
+    },
+    {
+      "text": "的期望，或者是否有任何其他调",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 538,
+            "y": 1427
+          },
+          {
+            "x": 1048,
+            "y": 1427
+          },
+          {
+            "x": 1048,
+            "y": 1472
+          },
+          {
+            "x": 538,
+            "y": 1472
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "整您希望进行?",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1486
+          },
+          {
+            "x": 260,
+            "y": 1486
+          },
+          {
+            "x": 260,
+            "y": 1525
+          },
+          {
+            "x": 18,
+            "y": 1525
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "我们迫不及待地想要完成设计并开始制作阶段，您的批准对我们",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1583
+          },
+          {
+            "x": 1045,
+            "y": 1583
+          },
+          {
+            "x": 1045,
+            "y": 1624
+          },
+          {
+            "x": 18,
+            "y": 1624
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "来说至关重要，我们致力于满足您的任何额外要求，以确保最终",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1639
+          },
+          {
+            "x": 1045,
+            "y": 1639
+          },
+          {
+            "x": 1045,
+            "y": 1681
+          },
+          {
+            "x": 18,
+            "y": 1681
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "产品完全符合",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1694
+          },
+          {
+            "x": 240,
+            "y": 1694
+          },
+          {
+            "x": 240,
+            "y": 1735
+          },
+          {
+            "x": 18,
+            "y": 1735
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "启迪科技",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 243,
+            "y": 1694
+          },
+          {
+            "x": 387,
+            "y": 1694
+          },
+          {
+            "x": 387,
+            "y": 1735
+          },
+          {
+            "x": 243,
+            "y": 1735
+          }
+        ]
+      },
+      "type": "关联方",
+      "association_id": "guanlianfang"
+    },
+    {
+      "text": "的愿景。",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 390,
+            "y": 1694
+          },
+          {
+            "x": 513,
+            "y": 1694
+          },
+          {
+            "x": 513,
+            "y": 1735
+          },
+          {
+            "x": 390,
+            "y": 1735
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "感谢您的持续合作和信任，期待我们能一同打造一场成功的活",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1794
+          },
+          {
+            "x": 1012,
+            "y": 1794
+          },
+          {
+            "x": 1012,
+            "y": 1839
+          },
+          {
+            "x": 18,
+            "y": 1839
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "动。如您有任何其他见解或需要进一步讨论，请随时直接联系",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1851
+          },
+          {
+            "x": 1012,
+            "y": 1851
+          },
+          {
+            "x": 1012,
+            "y": 1892
+          },
+          {
+            "x": 18,
+            "y": 1892
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "我。",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 18,
+            "y": 1909
+          },
+          {
+            "x": 74,
+            "y": 1909
+          },
+          {
+            "x": 74,
+            "y": 1948
+          },
+          {
+            "x": 18,
+            "y": 1948
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "最诚挚的问候",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 21,
+            "y": 1962
+          },
+          {
+            "x": 241,
+            "y": 1962
+          },
+          {
+            "x": 241,
+            "y": 2001
+          },
+          {
+            "x": 21,
+            "y": 2001
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "王雷",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 981,
+            "y": 2065
+          },
+          {
+            "x": 1054,
+            "y": 2065
+          },
+          {
+            "x": 1054,
+            "y": 2101
+          },
+          {
+            "x": 981,
+            "y": 2101
+          }
+        ]
+      },
+      "type": "名称",
+      "association_id": "wanglei"
+    },
+    {
+      "text": "市场总监",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 909,
+            "y": 2165
+          },
+          {
+            "x": 1057,
+            "y": 2165
+          },
+          {
+            "x": 1057,
+            "y": 2203
+          },
+          {
+            "x": 909,
+            "y": 2203
+          }
+        ]
+      },
+      "type": "职务",
+      "association_id": "zhiwu"
+    },
+    {
+      "text": "迅达广告有限公司",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 761,
+            "y": 2268
+          },
+          {
+            "x": 1054,
+            "y": 2265
+          },
+          {
+            "x": 1054,
+            "y": 2307
+          },
+          {
+            "x": 762,
+            "y": 2310
+          }
+        ]
+      },
+      "type": "名称",
+      "association_id": "xunda"
+    },
+    {
+      "text": "北京市朝阳区建国路88号",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 624,
+            "y": 2366
+          },
+          {
+            "x": 1054,
+            "y": 2366
+          },
+          {
+            "x": 1054,
+            "y": 2405
+          },
+          {
+            "x": 624,
+            "y": 2405
+          }
+        ]
+      },
+      "type": "地址",
+      "association_id": "dizhi"
+    },
+    {
+      "text": "wang.lei@xundamedia.com",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 589,
+            "y": 2469
+          },
+          {
+            "x": 1057,
+            "y": 2469
+          },
+          {
+            "x": 1057,
+            "y": 2511
+          },
+          {
+            "x": 589,
+            "y": 2511
+          }
+        ]
+      },
+      "type": "邮箱",
+      "association_id": "youxiang"
+    },
+    {
+      "text": "+86 138 0000 0000",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 720,
+            "y": 2572
+          },
+          {
+            "x": 1057,
+            "y": 2572
+          },
+          {
+            "x": 1057,
+            "y": 2605
+          },
+          {
+            "x": 720,
+            "y": 2605
+          }
+        ]
+      },
+      "type": "电话号码",
+      "association_id": "dianhuahaoma"
+    },
+    {
+      "text": "处理2封未读邮件",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 402,
+            "y": 2797
+          },
+          {
+            "x": 767,
+            "y": 2797
+          },
+          {
+            "x": 767,
+            "y": 2848
+          },
+          {
+            "x": 402,
+            "y": 2848
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    }
+  ]
+}

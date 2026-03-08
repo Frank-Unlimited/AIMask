@@ -1,0 +1,2844 @@
+{
+  "image_metadata": {
+    "dimensions": {
+      "width": 673,
+      "height": 982
+    }
+  },
+  "text_regions": [
+    {
+      "text": "房屋租赁合同",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 276,
+            "y": 11
+          },
+          {
+            "x": 394,
+            "y": 11
+          },
+          {
+            "x": 394,
+            "y": 32
+          },
+          {
+            "x": 276,
+            "y": 32
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "出租方",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 15,
+            "y": 84
+          },
+          {
+            "x": 56,
+            "y": 84
+          },
+          {
+            "x": 56,
+            "y": 97
+          },
+          {
+            "x": 15,
+            "y": 97
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "(",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 63,
+            "y": 85
+          },
+          {
+            "x": 69,
+            "y": 85
+          },
+          {
+            "x": 69,
+            "y": 96
+          },
+          {
+            "x": 63,
+            "y": 96
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "甲方",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 72,
+            "y": 85
+          },
+          {
+            "x": 98,
+            "y": 85
+          },
+          {
+            "x": 98,
+            "y": 97
+          },
+          {
+            "x": 72,
+            "y": 97
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ")",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 102,
+            "y": 85
+          },
+          {
+            "x": 106,
+            "y": 85
+          },
+          {
+            "x": 106,
+            "y": 96
+          },
+          {
+            "x": 102,
+            "y": 96
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 116,
+            "y": 89
+          },
+          {
+            "x": 119,
+            "y": 89
+          },
+          {
+            "x": 119,
+            "y": 96
+          },
+          {
+            "x": 116,
+            "y": 96
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "王建国",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 131,
+            "y": 85
+          },
+          {
+            "x": 169,
+            "y": 85
+          },
+          {
+            "x": 169,
+            "y": 99
+          },
+          {
+            "x": 131,
+            "y": 99
+          }
+        ]
+      },
+      "type": "名称",
+      "association_id": "wangjianguo"
+    },
+    {
+      "text": "身份证号码",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 14,
+            "y": 111
+          },
+          {
+            "x": 85,
+            "y": 111
+          },
+          {
+            "x": 85,
+            "y": 125
+          },
+          {
+            "x": 14,
+            "y": 125
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 88,
+            "y": 116
+          },
+          {
+            "x": 91,
+            "y": 116
+          },
+          {
+            "x": 91,
+            "y": 122
+          },
+          {
+            "x": 88,
+            "y": 122
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "11010519680312458X",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 104,
+            "y": 112
+          },
+          {
+            "x": 229,
+            "y": 112
+          },
+          {
+            "x": 229,
+            "y": 127
+          },
+          {
+            "x": 104,
+            "y": 127
+          }
+        ]
+      },
+      "type": "身份证号码",
+      "association_id": "shenfenzhenghaoma"
+    },
+    {
+      "text": "联系电话",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 15,
+            "y": 138
+          },
+          {
+            "x": 71,
+            "y": 138
+          },
+          {
+            "x": 71,
+            "y": 152
+          },
+          {
+            "x": 15,
+            "y": 152
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 74,
+            "y": 143
+          },
+          {
+            "x": 77,
+            "y": 143
+          },
+          {
+            "x": 77,
+            "y": 149
+          },
+          {
+            "x": 74,
+            "y": 149
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "13910284455",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 90,
+            "y": 138
+          },
+          {
+            "x": 166,
+            "y": 138
+          },
+          {
+            "x": 166,
+            "y": 154
+          },
+          {
+            "x": 90,
+            "y": 154
+          }
+        ]
+      },
+      "type": "电话号码",
+      "association_id": "dianhuahaoma"
+    },
+    {
+      "text": "承租方",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 14,
+            "y": 193
+          },
+          {
+            "x": 56,
+            "y": 193
+          },
+          {
+            "x": 56,
+            "y": 207
+          },
+          {
+            "x": 14,
+            "y": 207
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "(",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 64,
+            "y": 195
+          },
+          {
+            "x": 68,
+            "y": 195
+          },
+          {
+            "x": 68,
+            "y": 205
+          },
+          {
+            "x": 64,
+            "y": 205
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "乙方",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 71,
+            "y": 193
+          },
+          {
+            "x": 99,
+            "y": 193
+          },
+          {
+            "x": 99,
+            "y": 207
+          },
+          {
+            "x": 71,
+            "y": 207
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ")",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 101,
+            "y": 194
+          },
+          {
+            "x": 107,
+            "y": 194
+          },
+          {
+            "x": 107,
+            "y": 205
+          },
+          {
+            "x": 101,
+            "y": 205
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 116,
+            "y": 198
+          },
+          {
+            "x": 119,
+            "y": 198
+          },
+          {
+            "x": 119,
+            "y": 204
+          },
+          {
+            "x": 116,
+            "y": 204
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "陈晓莉",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 131,
+            "y": 193
+          },
+          {
+            "x": 169,
+            "y": 193
+          },
+          {
+            "x": 169,
+            "y": 208
+          },
+          {
+            "x": 131,
+            "y": 208
+          }
+        ]
+      },
+      "type": "名称",
+      "association_id": "chenxiaoli"
+    },
+    {
+      "text": "身份证号码",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 14,
+            "y": 220
+          },
+          {
+            "x": 85,
+            "y": 220
+          },
+          {
+            "x": 85,
+            "y": 233
+          },
+          {
+            "x": 14,
+            "y": 233
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 88,
+            "y": 225
+          },
+          {
+            "x": 91,
+            "y": 225
+          },
+          {
+            "x": 91,
+            "y": 231
+          },
+          {
+            "x": 88,
+            "y": 231
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "320502199511053021",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 103,
+            "y": 219
+          },
+          {
+            "x": 228,
+            "y": 219
+          },
+          {
+            "x": 228,
+            "y": 235
+          },
+          {
+            "x": 103,
+            "y": 235
+          }
+        ]
+      },
+      "type": "身份证号码",
+      "association_id": "shenfenzhenghaoma"
+    },
+    {
+      "text": "联系电话",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 14,
+            "y": 247
+          },
+          {
+            "x": 71,
+            "y": 247
+          },
+          {
+            "x": 71,
+            "y": 261
+          },
+          {
+            "x": 14,
+            "y": 261
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 74,
+            "y": 252
+          },
+          {
+            "x": 78,
+            "y": 252
+          },
+          {
+            "x": 78,
+            "y": 259
+          },
+          {
+            "x": 74,
+            "y": 259
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "18655439988",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 89,
+            "y": 247
+          },
+          {
+            "x": 166,
+            "y": 247
+          },
+          {
+            "x": 166,
+            "y": 262
+          },
+          {
+            "x": 89,
+            "y": 262
+          }
+        ]
+      },
+      "type": "电话号码",
+      "association_id": "dianhuahaoma"
+    },
+    {
+      "text": "根据《中华人民共和国民法典》及有关规定",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 41,
+            "y": 293
+          },
+          {
+            "x": 288,
+            "y": 293
+          },
+          {
+            "x": 288,
+            "y": 308
+          },
+          {
+            "x": 41,
+            "y": 308
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 292,
+            "y": 301
+          },
+          {
+            "x": 294,
+            "y": 301
+          },
+          {
+            "x": 294,
+            "y": 306
+          },
+          {
+            "x": 292,
+            "y": 306
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "为明确甲、乙双方的权利义务关系",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 303,
+            "y": 294
+          },
+          {
+            "x": 497,
+            "y": 294
+          },
+          {
+            "x": 497,
+            "y": 308
+          },
+          {
+            "x": 303,
+            "y": 308
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 501,
+            "y": 301
+          },
+          {
+            "x": 503,
+            "y": 301
+          },
+          {
+            "x": 503,
+            "y": 306
+          },
+          {
+            "x": 501,
+            "y": 306
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "经双方协商一致",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 512,
+            "y": 294
+          },
+          {
+            "x": 602,
+            "y": 294
+          },
+          {
+            "x": 602,
+            "y": 308
+          },
+          {
+            "x": 512,
+            "y": 308
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 606,
+            "y": 301
+          },
+          {
+            "x": 608,
+            "y": 301
+          },
+          {
+            "x": 608,
+            "y": 306
+          },
+          {
+            "x": 606,
+            "y": 306
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "签订本",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 616,
+            "y": 294
+          },
+          {
+            "x": 655,
+            "y": 294
+          },
+          {
+            "x": 655,
+            "y": 308
+          },
+          {
+            "x": 616,
+            "y": 308
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "合同。",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 15,
+            "y": 317
+          },
+          {
+            "x": 49,
+            "y": 317
+          },
+          {
+            "x": 49,
+            "y": 331
+          },
+          {
+            "x": 15,
+            "y": 331
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "第一条凵房屋基本情况",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 14,
+            "y": 355
+          },
+          {
+            "x": 148,
+            "y": 355
+          },
+          {
+            "x": 148,
+            "y": 372
+          },
+          {
+            "x": 14,
+            "y": 372
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "甲方将自有的坐落在",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 41,
+            "y": 391
+          },
+          {
+            "x": 161,
+            "y": 391
+          },
+          {
+            "x": 161,
+            "y": 406
+          },
+          {
+            "x": 41,
+            "y": 406
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "北京市朝阳区建国路88号现代城3号楼2单元1805室",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 173,
+            "y": 392
+          },
+          {
+            "x": 472,
+            "y": 392
+          },
+          {
+            "x": 472,
+            "y": 406
+          },
+          {
+            "x": 173,
+            "y": 406
+          }
+        ]
+      },
+      "type": "合同内容",
+      "association_id": "content"
+    },
+    {
+      "text": "的房屋",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 483,
+            "y": 392
+          },
+          {
+            "x": 524,
+            "y": 392
+          },
+          {
+            "x": 524,
+            "y": 406
+          },
+          {
+            "x": 483,
+            "y": 406
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 528,
+            "y": 398
+          },
+          {
+            "x": 531,
+            "y": 398
+          },
+          {
+            "x": 531,
+            "y": 404
+          },
+          {
+            "x": 528,
+            "y": 404
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "建筑面积",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 538,
+            "y": 392
+          },
+          {
+            "x": 591,
+            "y": 392
+          },
+          {
+            "x": 591,
+            "y": 406
+          },
+          {
+            "x": 538,
+            "y": 406
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "89平方",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 602,
+            "y": 391
+          },
+          {
+            "x": 654,
+            "y": 391
+          },
+          {
+            "x": 654,
+            "y": 408
+          },
+          {
+            "x": 602,
+            "y": 408
+          }
+        ]
+      },
+      "type": "合同内容",
+      "association_id": "content"
+    },
+    {
+      "text": "米",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 15,
+            "y": 415
+          },
+          {
+            "x": 27,
+            "y": 415
+          },
+          {
+            "x": 27,
+            "y": 428
+          },
+          {
+            "x": 15,
+            "y": 428
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 31,
+            "y": 422
+          },
+          {
+            "x": 33,
+            "y": 422
+          },
+          {
+            "x": 33,
+            "y": 426
+          },
+          {
+            "x": 31,
+            "y": 426
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "出租给乙方作为居住使用。",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 41,
+            "y": 415
+          },
+          {
+            "x": 191,
+            "y": 415
+          },
+          {
+            "x": 191,
+            "y": 429
+          },
+          {
+            "x": 41,
+            "y": 429
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "第二条凵租赁期限",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 14,
+            "y": 453
+          },
+          {
+            "x": 121,
+            "y": 453
+          },
+          {
+            "x": 121,
+            "y": 470
+          },
+          {
+            "x": 14,
+            "y": 470
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "租赁期共",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 41,
+            "y": 489
+          },
+          {
+            "x": 92,
+            "y": 489
+          },
+          {
+            "x": 92,
+            "y": 503
+          },
+          {
+            "x": 41,
+            "y": 503
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "12个月",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 95,
+            "y": 489
+          },
+          {
+            "x": 132,
+            "y": 489
+          },
+          {
+            "x": 132,
+            "y": 503
+          },
+          {
+            "x": 95,
+            "y": 503
+          }
+        ]
+      },
+      "type": "合同内容",
+      "association_id": "content"
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 136,
+            "y": 496
+          },
+          {
+            "x": 138,
+            "y": 496
+          },
+          {
+            "x": 138,
+            "y": 500
+          },
+          {
+            "x": 136,
+            "y": 500
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "甲方从",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 147,
+            "y": 489
+          },
+          {
+            "x": 185,
+            "y": 489
+          },
+          {
+            "x": 185,
+            "y": 503
+          },
+          {
+            "x": 147,
+            "y": 503
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "2023年10月01日",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 196,
+            "y": 490
+          },
+          {
+            "x": 290,
+            "y": 490
+          },
+          {
+            "x": 290,
+            "y": 503
+          },
+          {
+            "x": 196,
+            "y": 503
+          }
+        ]
+      },
+      "type": "合同内容",
+      "association_id": "content"
+    },
+    {
+      "text": "起将出租房屋交付乙方使用",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 302,
+            "y": 489
+          },
+          {
+            "x": 457,
+            "y": 489
+          },
+          {
+            "x": 457,
+            "y": 503
+          },
+          {
+            "x": 302,
+            "y": 503
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 461,
+            "y": 496
+          },
+          {
+            "x": 463,
+            "y": 496
+          },
+          {
+            "x": 463,
+            "y": 501
+          },
+          {
+            "x": 461,
+            "y": 501
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "至2024年09月30日",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 471,
+            "y": 490
+          },
+          {
+            "x": 589,
+            "y": 490
+          },
+          {
+            "x": 589,
+            "y": 503
+          },
+          {
+            "x": 471,
+            "y": 503
+          }
+        ]
+      },
+      "type": "合同内容",
+      "association_id": "content"
+    },
+    {
+      "text": "收回。",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 600,
+            "y": 489
+          },
+          {
+            "x": 635,
+            "y": 489
+          },
+          {
+            "x": 635,
+            "y": 503
+          },
+          {
+            "x": 600,
+            "y": 503
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "第三条租金及支付方式",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 14,
+            "y": 528
+          },
+          {
+            "x": 163,
+            "y": 528
+          },
+          {
+            "x": 163,
+            "y": 542
+          },
+          {
+            "x": 14,
+            "y": 542
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "1.双方约定房屋月租金为人民币",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 43,
+            "y": 564
+          },
+          {
+            "x": 230,
+            "y": 564
+          },
+          {
+            "x": 230,
+            "y": 578
+          },
+          {
+            "x": 43,
+            "y": 578
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "6,500元",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 242,
+            "y": 564
+          },
+          {
+            "x": 301,
+            "y": 564
+          },
+          {
+            "x": 301,
+            "y": 578
+          },
+          {
+            "x": 242,
+            "y": 578
+          }
+        ]
+      },
+      "type": "合同内容",
+      "association_id": "content"
+    },
+    {
+      "text": "(",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 308,
+            "y": 566
+          },
+          {
+            "x": 311,
+            "y": 566
+          },
+          {
+            "x": 311,
+            "y": 576
+          },
+          {
+            "x": 308,
+            "y": 576
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "大写",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 314,
+            "y": 564
+          },
+          {
+            "x": 339,
+            "y": 564
+          },
+          {
+            "x": 339,
+            "y": 578
+          },
+          {
+            "x": 314,
+            "y": 578
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 343,
+            "y": 569
+          },
+          {
+            "x": 345,
+            "y": 569
+          },
+          {
+            "x": 345,
+            "y": 575
+          },
+          {
+            "x": 343,
+            "y": 575
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "陆仟伍佰元整",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 354,
+            "y": 563
+          },
+          {
+            "x": 431,
+            "y": 563
+          },
+          {
+            "x": 431,
+            "y": 578
+          },
+          {
+            "x": 354,
+            "y": 578
+          }
+        ]
+      },
+      "type": "合同内容",
+      "association_id": "content"
+    },
+    {
+      "text": ")",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 434,
+            "y": 566
+          },
+          {
+            "x": 437,
+            "y": 566
+          },
+          {
+            "x": 437,
+            "y": 577
+          },
+          {
+            "x": 434,
+            "y": 577
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "。",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 447,
+            "y": 570
+          },
+          {
+            "x": 451,
+            "y": 570
+          },
+          {
+            "x": 451,
+            "y": 574
+          },
+          {
+            "x": 447,
+            "y": 574
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "2.支付方式为",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 42,
+            "y": 600
+          },
+          {
+            "x": 126,
+            "y": 600
+          },
+          {
+            "x": 126,
+            "y": 614
+          },
+          {
+            "x": 42,
+            "y": 614
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "押一付三",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 128,
+            "y": 600
+          },
+          {
+            "x": 178,
+            "y": 600
+          },
+          {
+            "x": 178,
+            "y": 614
+          },
+          {
+            "x": 128,
+            "y": 614
+          }
+        ]
+      },
+      "type": "合同内容",
+      "association_id": "content"
+    },
+    {
+      "text": "。本合同签订之日",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 182,
+            "y": 600
+          },
+          {
+            "x": 282,
+            "y": 600
+          },
+          {
+            "x": 282,
+            "y": 614
+          },
+          {
+            "x": 182,
+            "y": 614
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 286,
+            "y": 607
+          },
+          {
+            "x": 288,
+            "y": 607
+          },
+          {
+            "x": 288,
+            "y": 611
+          },
+          {
+            "x": 286,
+            "y": 611
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "乙方需向甲方支付押金人民币",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 297,
+            "y": 600
+          },
+          {
+            "x": 464,
+            "y": 600
+          },
+          {
+            "x": 464,
+            "y": 614
+          },
+          {
+            "x": 297,
+            "y": 614
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "6,500元",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 476,
+            "y": 600
+          },
+          {
+            "x": 535,
+            "y": 600
+          },
+          {
+            "x": 535,
+            "y": 614
+          },
+          {
+            "x": 476,
+            "y": 614
+          }
+        ]
+      },
+      "type": "合同内容",
+      "association_id": "content"
+    },
+    {
+      "text": "。",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 538,
+            "y": 602
+          },
+          {
+            "x": 543,
+            "y": 602
+          },
+          {
+            "x": 543,
+            "y": 613
+          },
+          {
+            "x": 538,
+            "y": 613
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "3.租金需汇入甲方指定银行账户",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 41,
+            "y": 635
+          },
+          {
+            "x": 231,
+            "y": 635
+          },
+          {
+            "x": 231,
+            "y": 650
+          },
+          {
+            "x": 41,
+            "y": 650
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 234,
+            "y": 641
+          },
+          {
+            "x": 236,
+            "y": 641
+          },
+          {
+            "x": 236,
+            "y": 647
+          },
+          {
+            "x": 234,
+            "y": 647
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "户名",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 41,
+            "y": 672
+          },
+          {
+            "x": 68,
+            "y": 672
+          },
+          {
+            "x": 68,
+            "y": 686
+          },
+          {
+            "x": 41,
+            "y": 686
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 72,
+            "y": 677
+          },
+          {
+            "x": 76,
+            "y": 677
+          },
+          {
+            "x": 76,
+            "y": 683
+          },
+          {
+            "x": 72,
+            "y": 683
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "王建国",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 84,
+            "y": 673
+          },
+          {
+            "x": 124,
+            "y": 673
+          },
+          {
+            "x": 124,
+            "y": 686
+          },
+          {
+            "x": 84,
+            "y": 686
+          }
+        ]
+      },
+      "type": "银行卡户名",
+      "association_id": "huming"
+    },
+    {
+      "text": "开户行",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 41,
+            "y": 708
+          },
+          {
+            "x": 83,
+            "y": 708
+          },
+          {
+            "x": 83,
+            "y": 722
+          },
+          {
+            "x": 41,
+            "y": 722
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 86,
+            "y": 713
+          },
+          {
+            "x": 89,
+            "y": 713
+          },
+          {
+            "x": 89,
+            "y": 719
+          },
+          {
+            "x": 86,
+            "y": 719
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "中国工商银行北京分行",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 98,
+            "y": 708
+          },
+          {
+            "x": 237,
+            "y": 708
+          },
+          {
+            "x": 237,
+            "y": 722
+          },
+          {
+            "x": 98,
+            "y": 722
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "银行账号",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 40,
+            "y": 742
+          },
+          {
+            "x": 96,
+            "y": 742
+          },
+          {
+            "x": 96,
+            "y": 759
+          },
+          {
+            "x": 40,
+            "y": 759
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 100,
+            "y": 742
+          },
+          {
+            "x": 103,
+            "y": 742
+          },
+          {
+            "x": 103,
+            "y": 759
+          },
+          {
+            "x": 100,
+            "y": 759
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "6222凵0210凵0111凵2233凵445",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 112,
+            "y": 742
+          },
+          {
+            "x": 294,
+            "y": 742
+          },
+          {
+            "x": 294,
+            "y": 759
+          },
+          {
+            "x": 112,
+            "y": 759
+          }
+        ]
+      },
+      "type": "银行卡号",
+      "association_id": "kahao"
+    },
+    {
+      "text": "第四条凵违约责任",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 14,
+            "y": 780
+          },
+          {
+            "x": 120,
+            "y": 780
+          },
+          {
+            "x": 120,
+            "y": 797
+          },
+          {
+            "x": 14,
+            "y": 797
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "租赁期间",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 41,
+            "y": 818
+          },
+          {
+            "x": 93,
+            "y": 818
+          },
+          {
+            "x": 93,
+            "y": 832
+          },
+          {
+            "x": 41,
+            "y": 832
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 96,
+            "y": 824
+          },
+          {
+            "x": 98,
+            "y": 824
+          },
+          {
+            "x": 98,
+            "y": 830
+          },
+          {
+            "x": 96,
+            "y": 830
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "任何一方提出终止合同",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 106,
+            "y": 818
+          },
+          {
+            "x": 236,
+            "y": 818
+          },
+          {
+            "x": 236,
+            "y": 832
+          },
+          {
+            "x": 106,
+            "y": 832
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 240,
+            "y": 825
+          },
+          {
+            "x": 242,
+            "y": 825
+          },
+          {
+            "x": 242,
+            "y": 830
+          },
+          {
+            "x": 240,
+            "y": 830
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "需提前一个月书面通知对方",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 251,
+            "y": 818
+          },
+          {
+            "x": 406,
+            "y": 818
+          },
+          {
+            "x": 406,
+            "y": 832
+          },
+          {
+            "x": 251,
+            "y": 832
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 410,
+            "y": 825
+          },
+          {
+            "x": 412,
+            "y": 825
+          },
+          {
+            "x": 412,
+            "y": 830
+          },
+          {
+            "x": 410,
+            "y": 830
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "经双方协商后签订终止合同书。若一方强",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 421,
+            "y": 818
+          },
+          {
+            "x": 654,
+            "y": 818
+          },
+          {
+            "x": 654,
+            "y": 832
+          },
+          {
+            "x": 421,
+            "y": 832
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "行解除合同",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 15,
+            "y": 842
+          },
+          {
+            "x": 79,
+            "y": 842
+          },
+          {
+            "x": 79,
+            "y": 854
+          },
+          {
+            "x": 15,
+            "y": 854
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "，",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 83,
+            "y": 848
+          },
+          {
+            "x": 85,
+            "y": 848
+          },
+          {
+            "x": 85,
+            "y": 852
+          },
+          {
+            "x": 83,
+            "y": 852
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "须向另一方支付违约金人民币",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 93,
+            "y": 841
+          },
+          {
+            "x": 261,
+            "y": 841
+          },
+          {
+            "x": 261,
+            "y": 856
+          },
+          {
+            "x": 93,
+            "y": 856
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "6,500元",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 273,
+            "y": 841
+          },
+          {
+            "x": 332,
+            "y": 841
+          },
+          {
+            "x": 332,
+            "y": 856
+          },
+          {
+            "x": 273,
+            "y": 856
+          }
+        ]
+      },
+      "type": "合同内容",
+      "association_id": "content"
+    },
+    {
+      "text": "。",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 336,
+            "y": 842
+          },
+          {
+            "x": 339,
+            "y": 842
+          },
+          {
+            "x": 339,
+            "y": 854
+          },
+          {
+            "x": 336,
+            "y": 854
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "甲方",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 16,
+            "y": 924
+          },
+          {
+            "x": 40,
+            "y": 924
+          },
+          {
+            "x": 40,
+            "y": 938
+          },
+          {
+            "x": 16,
+            "y": 938
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "(",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 47,
+            "y": 925
+          },
+          {
+            "x": 52,
+            "y": 925
+          },
+          {
+            "x": 52,
+            "y": 936
+          },
+          {
+            "x": 47,
+            "y": 936
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "签字",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 54,
+            "y": 924
+          },
+          {
+            "x": 79,
+            "y": 924
+          },
+          {
+            "x": 79,
+            "y": 938
+          },
+          {
+            "x": 54,
+            "y": 938
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ")",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 82,
+            "y": 926
+          },
+          {
+            "x": 87,
+            "y": 926
+          },
+          {
+            "x": 87,
+            "y": 936
+          },
+          {
+            "x": 82,
+            "y": 936
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 96,
+            "y": 929
+          },
+          {
+            "x": 98,
+            "y": 929
+          },
+          {
+            "x": 98,
+            "y": 935
+          },
+          {
+            "x": 96,
+            "y": 935
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "乙方",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 399,
+            "y": 923
+          },
+          {
+            "x": 424,
+            "y": 923
+          },
+          {
+            "x": 424,
+            "y": 938
+          },
+          {
+            "x": 399,
+            "y": 938
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "(",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 431,
+            "y": 926
+          },
+          {
+            "x": 436,
+            "y": 926
+          },
+          {
+            "x": 436,
+            "y": 936
+          },
+          {
+            "x": 431,
+            "y": 936
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "签字",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 438,
+            "y": 924
+          },
+          {
+            "x": 464,
+            "y": 924
+          },
+          {
+            "x": 464,
+            "y": 938
+          },
+          {
+            "x": 438,
+            "y": 938
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ")",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 467,
+            "y": 926
+          },
+          {
+            "x": 470,
+            "y": 926
+          },
+          {
+            "x": 470,
+            "y": 936
+          },
+          {
+            "x": 467,
+            "y": 936
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 480,
+            "y": 929
+          },
+          {
+            "x": 482,
+            "y": 929
+          },
+          {
+            "x": 482,
+            "y": 935
+          },
+          {
+            "x": 480,
+            "y": 935
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "日期",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 16,
+            "y": 960
+          },
+          {
+            "x": 41,
+            "y": 960
+          },
+          {
+            "x": 41,
+            "y": 973
+          },
+          {
+            "x": 16,
+            "y": 973
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 44,
+            "y": 964
+          },
+          {
+            "x": 46,
+            "y": 964
+          },
+          {
+            "x": 46,
+            "y": 970
+          },
+          {
+            "x": 44,
+            "y": 970
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "2023年09月28日",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 55,
+            "y": 961
+          },
+          {
+            "x": 148,
+            "y": 961
+          },
+          {
+            "x": 148,
+            "y": 972
+          },
+          {
+            "x": 55,
+            "y": 972
+          }
+        ]
+      },
+      "type": "合同日期",
+      "association_id": "time"
+    },
+    {
+      "text": "日期",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 400,
+            "y": 959
+          },
+          {
+            "x": 425,
+            "y": 959
+          },
+          {
+            "x": 425,
+            "y": 973
+          },
+          {
+            "x": 400,
+            "y": 973
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": ":",
+      "level": "none",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 428,
+            "y": 964
+          },
+          {
+            "x": 430,
+            "y": 964
+          },
+          {
+            "x": 430,
+            "y": 971
+          },
+          {
+            "x": 428,
+            "y": 971
+          }
+        ]
+      },
+      "type": "none",
+      "association_id": null
+    },
+    {
+      "text": "2023年09月28日",
+      "level": "high",
+      "bounding_box": {
+        "vertices": [
+          {
+            "x": 438,
+            "y": 960
+          },
+          {
+            "x": 531,
+            "y": 960
+          },
+          {
+            "x": 531,
+            "y": 973
+          },
+          {
+            "x": 438,
+            "y": 973
+          }
+        ]
+      },
+      "type": "合同日期",
+      "association_id": "time"
+    }
+  ]
+}
