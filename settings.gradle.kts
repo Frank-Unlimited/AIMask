@@ -16,9 +16,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        gradlePluginPortal()
     }
 }
 
-rootProject.name = "AI dama"
+rootProject.name = "AI-dama"
 include(":app")

@@ -315,8 +315,8 @@
           }
         ]
       },
-      "type": "名称",
-      "association_id": "qidikeji"
+      "type": "关联方",
+      "association_id": "guanlianfang"
     },
     {
       "text": "团队:",
@@ -445,8 +445,8 @@
           }
         ]
       },
-      "type": "会议内容",
-      "association_id": "content"
+      "type": "业务隐私",
+      "association_id": "yewuyinsi"
     },
     {
       "text": "方案的细节。贵团队的洞察和建议对于我",
@@ -601,8 +601,8 @@
           }
         ]
       },
-      "type": "会议内容",
-      "association_id": "content"
+      "type": "业务隐私",
+      "association_id": "yewuyinsi"
     },
     {
       "text": "，旨",
@@ -679,8 +679,8 @@
           }
         ]
       },
-      "type": "会议内容",
-      "association_id": "content"
+      "type": "业务隐私",
+      "association_id": "yewuyinsi"
     },
     {
       "text": "中使用",
@@ -731,8 +731,8 @@
           }
         ]
       },
-      "type": "会议内容",
-      "association_id": "content"
+      "type": "业务隐私",
+      "association_id": "yewuyinsi"
     },
     {
       "text": "，以保持一致的品牌信息。此外，布局将优",
@@ -809,8 +809,8 @@
           }
         ]
       },
-      "type": "会议内容",
-      "association_id": "content"
+      "type": "业务隐私",
+      "association_id": "yewuyinsi"
     },
     {
       "text": "，确保其立即引人",
@@ -913,8 +913,8 @@
           }
         ]
       },
-      "type": "名称",
-      "association_id": "lihua"
+      "type": "关联方",
+      "association_id": "guanlianfang"
     },
     {
       "text": "的反馈，特别是关于",
@@ -965,8 +965,8 @@
           }
         ]
       },
-      "type": "会议内容",
-      "association_id": "content"
+      "type": "业务隐私",
+      "association_id": " yewuyinsi"
     },
     {
       "text": "的",
@@ -1043,8 +1043,8 @@
           }
         ]
       },
-      "type": "名称",
-      "association_id": "lihua"
+      "type": "关联方",
+      "association_id": "guanlianfang"
     },
     {
       "text": "审阅附加的",
@@ -1121,8 +1121,8 @@
           }
         ]
       },
-      "type": "名称",
-      "association_id": "qidikeji"
+      "type": "关联方",
+      "association_id": "guanlianfang"
     },
     {
       "text": "的期望，或者是否有任何其他调",
@@ -1277,8 +1277,8 @@
           }
         ]
       },
-      "type": "名称",
-      "association_id": "qidikeji"
+      "type": "关联方",
+      "association_id": "guanlianfang"
     },
     {
       "text": "的愿景。",

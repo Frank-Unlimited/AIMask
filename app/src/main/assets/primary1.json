@@ -7716,7 +7716,7 @@
     },
     {
       "text": "整",
-      "bounding_box": {
+      "bounding_box":  {
         "vertices": [
           {
             "x": 23,

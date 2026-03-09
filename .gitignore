@@ -1,38 +1,74 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# ==========================================
+# 1. 编译生成的产物 (Build Outputs)
+# ==========================================
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+build/
+*/build/
+
+# ==========================================
+# 2. 本地配置文件 (绝对不能上传的隐私/本地化文件)
+# ==========================================
+# 这个文件包含了你电脑的专属 Android SDK 路径，别人下载了会直接报错！
 local.properties
-# Ignore local wrapper and platform-specific runner scripts and wrapper properties
-gradlew.bat
-gradlew
-gradle/wrapper/gradle-wrapper.properties
-gradle.properties
-# Ignore IDE project files and other local configs
-.idea/
-.idea/*
-# Keep .gitignore itself tracked
-!.gitignore
 
-# Ignore local build files and version catalog
-/app/build.gradle.kts
-/build.gradle.kts
-/gradle/libs.versions.toml
+# ==========================================
+# 3. Gradle 缓存文件
+# ==========================================
+.gradle/
+gradle-app.setting
 
-# captcha ocr - 忽略虚拟环境和模型文件，保留脚本
-/captcha/.venv/
-/captcha/mineru-master/
-/captcha/*.jpg
-/captcha/*.png
-/captcha/ocr_project/result.json
-/captcha/.env
+# ==========================================
+# 4. 签名与密钥文件 (极度危险，防泄漏)
+# ==========================================
+# 如果你有正式发布的签名文件，绝对不能传到公共仓库！
+*.jks
+*.keystore
+
+# ==========================================
+# 5. IDE 自动生成的配置文件 (Android Studio)
+# ==========================================
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/deploymentTargetSelector.xml
+
+# ==========================================
+# 6. 操作系统生成的垃圾文件
+# ==========================================
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==========================================
+# 7. C/C++ 交叉编译缓存 (如果有 NDK)
+# ==========================================
+.externalNativeBuild/
+.cxx/
+
+# ==========================================
+# 8. 各种日志文件
+# ==========================================
+*.log
