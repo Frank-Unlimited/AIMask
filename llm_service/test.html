@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私打码决策服务测试</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 30px;
+        }
+        
+        .panel {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .panel h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .ocr-display {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 15px;
+            min-height: 200px;
+            margin-bottom: 15px;
+            line-height: 1.8;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .ocr-text {
+            display: inline;
+            padding: 2px 4px;
+            border-radius: 3px;
+            transition: background 0.2s;
+        }
+        
+        .ocr-text:hover {
+            background: #e3f2fd;
+        }
+        
+        .ocr-text.masked {
+            background: #ffeb3b;
+            text-decoration: line-through;
+            color: #666;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+            font-size: 14px;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: inherit;
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        button {
+            flex: 1;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        
+        .result-box {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 15px;
+            min-height: 150px;
+            max-height: 400px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+        }
+        
+        .recommendation-item {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        
+        .recommendation-item .text {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .recommendation-item .meta {
+            font-size: 12px;
+            color: #666;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        
+        .badge-add {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .badge-remove {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .confidence-bar {
+            height: 4px;
+            background: #e9ecef;
+            border-radius: 2px;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+        
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #28a745, #ffc107, #dc3545);
+            transition: width 0.3s;
+        }
+        
+        .masked-list {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 10px;
+        }
+        
+        .category-group {
+            margin-bottom: 10px;
+        }
+        
+        .category-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        
+        .category-header:hover {
+            transform: translateX(2px);
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+        
+        .category-header .count {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+        
+        .category-header .arrow {
+            transition: transform 0.2s;
+        }
+        
+        .category-header.collapsed .arrow {
+            transform: rotate(-90deg);
+        }
+        
+        .category-items {
+            padding: 5px 0;
+            display: none;
+        }
+        
+        .category-items.expanded {
+            display: block;
+        }
+        
+        .masked-item {
+            background: #fff3cd;
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 4px;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 3px solid #ffc107;
+        }
+        
+        .masked-item .text {
+            flex: 1;
+            word-break: break-all;
+        }
+        
+        .remove-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+        }
+        
+        .status {
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+        
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 隐私打码决策服务测试</h1>
+            <p>可直接点击"AI智能打码"自动识别，或点击文本进行精准打码</p>
+        </div>
+        
+        <div class="content">
+            <!-- 左侧：OCR文本显示和交互 -->
+            <div class="panel">
+                <h2>📄 OCR文本内容（可选：点击文字精准打码）</h2>
+                <div id="ocrDisplay" class="ocr-display"></div>
+                
+                <div class="form-group">
+                    <label>当前已打码内容</label>
+                    <div id="maskedList" class="masked-list">
+                        <div style="text-align: center; color: #999; padding: 20px;">暂无打码内容</div>
+                    </div>
+                </div>
+                
+              
+                
+                <div class="form-group">
+                    <label>会话ID（用于保持对话记忆，可自定义）</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="text" id="sessionIdInput" style="flex: 1; font-family: monospace; font-size: 11px;">
+                        <button onclick="generateNewSessionId()" style="padding: 10px 15px; background: #6c757d; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 12px;">
+                            🔄 新会话
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>自然语言指令（可选）</label>
+                    <input type="text" id="naturalLanguage" placeholder="例如：打码所有电话号码">
+                </div>
+                
+                <div class="button-group">
+                    <button class="btn-primary" onclick="analyzeSelection()">🔍 AI智能打码</button>
+                    <button class="btn-secondary" onclick="resetDemo()">🔄 重置</button>
+                </div>
+            </div>
+            
+            <!-- 右侧：请求和响应 -->
+            <div class="panel">
+                <h2>📤 API请求</h2>
+                <div class="form-group">
+                    <label>服务地址</label>
+                    <input type="text" id="apiUrl" value="http://localhost:8004/analyze">
+                </div>
+                <div class="result-box" id="requestBox">
+                    <pre style="color: #666;">点击左侧文本后，这里会显示发送的请求数据</pre>
+                </div>
+                
+                <h2 style="margin-top: 20px;">📥 API响应</h2>
+                <div id="statusBox"></div>
+                <div id="responseBox" class="result-box">
+                    <pre style="color: #666;">等待API响应...</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 全局状态
+        let ocrTexts = [
+            "确认广告设计方案",
+            "2026-01-22 14:41:01",
+            "尊敬的启迪科技团队：",
+            "您好！希望这封邮件能找到您一切安好。我写信是为了确认我们在上次会议中讨论的广告设计方案的细节。贵团队的洞察和建议对于我们广告活动的方向非常宝贵。",
+            "根据我们的讨论，建议的设计将采用生动的色彩和现代字体，旨在吸引我们的目标观众的注意。我们计划在所有视觉元素中使用标语\"创造无限可能\"，以保持一致的品牌信息。此外，布局将优先考虑清晰和影响力，重要信息将被突出显示，确保其立即引人注目。",
+            "我们已经整合了贵公司",
+            "李华",
+            "经理的反馈，特别是关于布局调整的建议，我们相信这将增强活动的整体效果。请李经理审阅附加的草案，并确认是否符合",
+            "启迪科技",
+            "的期望，或者是否有任何其他调整您希望进行？",
+            "我们迫不及待地想要完成设计并开始制作阶段，您的批准对我们来说至关重要，我们致力于满足您的任何额外要求，以确保最终产品完全符合启迪科技的愿景。",
+            "感谢您的持续合作和信任，期待我们能一同打造一场成功的活动。如您有任何其他见解或需要进一步讨论，请随时直接联系我。",
+            "最诚挚的问候",
+            "王雷",
+            "市场总监",
+            "迅达广告有限公司",
+            "北京市朝阳区建国路 88 号",
+            "wang.lei@xundamedia.com",
+            "+86 138 0000 0000"
+        ];
+        let currentMasked = [];
+        let selectedText = null;
+        let selectedContext = null;
+        let sessionId = generateSessionId(); // 生成会话ID
+
+        // 生成会话ID
+        function generateSessionId() {
+            return 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+        }
+
+        // 生成新会话ID并更新输入框
+        function generateNewSessionId() {
+            sessionId = generateSessionId();
+            document.getElementById('sessionIdInput').value = sessionId;
+            showStatus('info', '已生成新会话ID: ' + sessionId);
+        }
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            renderOcrTexts();
+            setupOcrClickHandlers();
+            document.getElementById('sessionIdInput').value = sessionId;
+        });
+
+        // 渲染OCR文本
+        function renderOcrTexts() {
+            const ocrDisplay = document.getElementById('ocrDisplay');
+            ocrDisplay.innerHTML = '';
+            
+            // 将所有文本合并，然后按字符拆分
+            const fullText = ocrTexts.join('');
+            fullText.split('').forEach((char, index) => {
+                const span = document.createElement('span');
+                span.className = 'ocr-text';
+                span.dataset.index = index;
+                span.dataset.char = char;
+                span.textContent = char;
+                ocrDisplay.appendChild(span);
+            });
+        }
+
+        // 设置OCR文本点击事件
+        function setupOcrClickHandlers() {
+            const fullText = ocrTexts.join('');
+            
+            document.querySelectorAll('.ocr-text').forEach(span => {
+                span.addEventListener('click', function() {
+                    // 移除之前的选中状态
+                    document.querySelectorAll('.ocr-text').forEach(s => s.style.outline = '');
+                    
+                    // 高亮当前选中
+                    this.style.outline = '2px solid #667eea';
+                    
+                    const charIndex = parseInt(this.dataset.index);
+                    selectedText = this.dataset.char;
+                    
+                    // 获取上下文（前后各20个字符）
+                    const start = Math.max(0, charIndex - 20);
+                    const end = Math.min(fullText.length, charIndex + 21);
+                    selectedContext = fullText.substring(start, end);
+                    
+                    // 自动判断操作类型：如果已打码则取消，否则新增
+                    const isMasked = this.classList.contains('masked');
+                    const actionType = isMasked ? 'remove' : 'add';
+                    const actionTypeInput = document.getElementById('actionType');
+                    if (actionTypeInput) {
+                        actionTypeInput.value = actionType === 'add' ? '➕ 新增打码' : '➖ 取消打码';
+                    }
+                    
+                    showStatus('info', `已选中: "${selectedText}" | 操作: ${actionType === 'add' ? '新增打码' : '取消打码'}`);
+                });
+            });
+        }
+
+        // 分析打码建议
+        async function analyzeSelection() {
+            const naturalLanguage = document.getElementById('naturalLanguage').value;
+            const apiUrl = document.getElementById('apiUrl').value;
+            
+            // 从输入框读取会话ID（用户可能手动修改了）
+            sessionId = document.getElementById('sessionIdInput').value.trim();
+            if (!sessionId) {
+                sessionId = generateSessionId();
+                document.getElementById('sessionIdInput').value = sessionId;
+            }
+            
+            let actionType = 'add';
+            let clickedChar = '';
+            let contextWindow = '';
+            
+            // 如果有选中文本，使用选中的信息
+            if (selectedText) {
+                const selectedSpan = document.querySelector('.ocr-text[style*="outline"]');
+                const isMasked = selectedSpan && selectedSpan.classList.contains('masked');
+                actionType = isMasked ? 'remove' : 'add';
+                clickedChar = selectedText.substring(0, 2);
+                contextWindow = selectedContext;
+            } else {
+                // 没有选中文本时，表示全文智能分析
+                // context_window传空字符串，让LLM知道这是全文分析
+                contextWindow = '';
+                clickedChar = '';  // 空字符串表示没有点击特定文本
+            }
+
+            // 构建请求数据
+            const requestData = {
+                ocr_texts: ocrTexts,
+                current_masked: currentMasked,
+                user_feedback: {
+                    clicked_char: clickedChar,
+                    context_window: contextWindow,
+                    action_type: actionType,
+                    natural_language: naturalLanguage || null
+                },
+                session_id: sessionId  // 添加会话ID
+            };
+
+            // 显示请求
+            document.getElementById('requestBox').innerHTML = 
+                `<pre>${JSON.stringify(requestData, null, 2)}</pre>`;
+
+            showStatus('info', '正在调用API...');
+
+            try {
+                console.log('=== API请求 ===');
+                console.log('URL:', apiUrl);
+                console.log('请求数据:', JSON.stringify(requestData, null, 2));
+                
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(requestData)
+                });
+
+                const result = await response.json();
+
+                console.log('=== API响应 ===');
+                console.log('状态码:', response.status);
+                console.log('响应数据:', JSON.stringify(result, null, 2));
+
+                if (response.ok) {
+                    showStatus('success', '✓ API调用成功');
+                    displayRecommendations(result);
+                } else {
+                    showStatus('error', `✗ API调用失败: ${result.detail || '未知错误'}`);
+                    document.getElementById('responseBox').innerHTML = 
+                        `<pre style="color: #dc3545;">${JSON.stringify(result, null, 2)}</pre>`;
+                }
+            } catch (error) {
+                console.error('=== API错误 ===');
+                console.error('错误信息:', error);
+                showStatus('error', `✗ 网络错误: ${error.message}`);
+                document.getElementById('responseBox').innerHTML = 
+                    `<pre style="color: #dc3545;">错误: ${error.message}\n\n请确保服务已启动在 ${apiUrl}</pre>`;
+            }
+        }
+
+        // 显示推荐结果
+        function displayRecommendations(result) {
+            const responseBox = document.getElementById('responseBox');
+            
+            if (!result.mask_recommendations || result.mask_recommendations.length === 0) {
+                responseBox.innerHTML = '<div style="text-align: center; color: #999; padding: 20px;">没有打码建议</div>';
+                return;
+            }
+
+            let html = '';
+            let appliedCount = 0;
+            
+            result.mask_recommendations.forEach(rec => {
+                const badgeClass = rec.action === 'add' ? 'badge-add' : 'badge-remove';
+                const badgeText = rec.action === 'add' ? '➕ 新增打码' : '➖ 取消打码';
+                const confidencePercent = (rec.confidence * 100).toFixed(0);
+                
+                html += `
+                    <div class="recommendation-item">
+                        <div class="text">"${rec.text}"</div>
+                        <div class="meta">
+                            <span class="badge ${badgeClass}">${badgeText}</span>
+                            <span>分类: ${rec.category}</span>
+                            <span>置信度: ${confidencePercent}%</span>
+                        </div>
+                        <div style="font-size: 12px; color: #666; margin-top: 5px;">
+                            ${rec.reason}
+                        </div>
+                        <div class="confidence-bar">
+                            <div class="confidence-fill" style="width: ${confidencePercent}%"></div>
+                        </div>
+                        <div style="margin-top: 8px; padding: 6px 10px; background: #d4edda; color: #155724; border-radius: 4px; font-size: 12px;">
+                            ✓ 已自动应用
+                        </div>
+                    </div>
+                `;
+                
+                // 自动应用建议
+                applyRecommendation(rec);
+                appliedCount++;
+            });
+            
+            responseBox.innerHTML = html;
+            showStatus('success', `✓ 已自动应用 ${appliedCount} 条打码建议`);
+        }
+
+        // 应用推荐
+        function applyRecommendation(rec) {
+            const fullText = ocrTexts.join('');
+            
+            if (rec.action === 'add') {
+                // 检查是否已存在
+                const existingItem = currentMasked.find(m => m.text === rec.text);
+                
+                if (existingItem) {
+                    // 如果已存在但标签不同，更新标签
+                    if (existingItem.category !== rec.category) {
+                        const oldCategory = existingItem.category;
+                        existingItem.category = rec.category;
+                        showStatus('info', `✓ 已将"${rec.text}"的标签从"${oldCategory}"更新为"${rec.category}"`);
+                    }
+                } else {
+                    // 新增打码项
+                    currentMasked.push({
+                        category: rec.category,
+                        text: rec.text
+                    });
+                    
+                    // 在OCR显示中标记
+                    markTextInOcr(rec.text, true);
+                }
+            } else if (rec.action === 'remove') {
+                // 从已打码列表移除
+                currentMasked = currentMasked.filter(m => m.text !== rec.text);
+                
+                // 在OCR显示中取消标记
+                markTextInOcr(rec.text, false);
+            }
+            
+            updateMaskedList();
+        }
+        
+        // 在OCR显示中标记或取消标记文本
+        function markTextInOcr(text, shouldMark) {
+            const fullText = ocrTexts.join('');
+            const spans = document.querySelectorAll('.ocr-text');
+            
+            for (let i = 0; i < fullText.length; i++) {
+                if (fullText.substring(i, i + text.length) === text) {
+                    for (let j = i; j < i + text.length && j < spans.length; j++) {
+                        if (shouldMark) {
+                            spans[j].classList.add('masked');
+                        } else {
+                            spans[j].classList.remove('masked');
+                        }
+                    }
+                }
+            }
+        }
+
+        // 更新已打码列表显示
+        function updateMaskedList() {
+            const maskedList = document.getElementById('maskedList');
+            
+            if (currentMasked.length === 0) {
+                maskedList.innerHTML = '<div style="text-align: center; color: #999; padding: 20px;">暂无打码内容</div>';
+                return;
+            }
+            
+            // 按类别分组
+            const groupedByCategory = {};
+            currentMasked.forEach((item, index) => {
+                if (!groupedByCategory[item.category]) {
+                    groupedByCategory[item.category] = [];
+                }
+                groupedByCategory[item.category].push({ ...item, originalIndex: index });
+            });
+            
+            let html = '';
+            Object.keys(groupedByCategory).forEach(category => {
+                const items = groupedByCategory[category];
+                const categoryId = 'category-' + category.replace(/\s+/g, '-');
+                
+                html += `
+                    <div class="category-group">
+                        <div class="category-header collapsed" onclick="toggleCategory('${categoryId}')">
+                            <span>${category} <span class="count">${items.length}</span></span>
+                            <span class="arrow">▼</span>
+                        </div>
+                        <div class="category-items" id="${categoryId}">
+                            ${items.map(item => `
+                                <div class="masked-item">
+                                    <span class="text">${item.text}</span>
+                                    <button class="remove-btn" onclick="removeMasked(${item.originalIndex})">移除</button>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            maskedList.innerHTML = html;
+        }
+        
+        // 切换类别展开/折叠
+        function toggleCategory(categoryId) {
+            const items = document.getElementById(categoryId);
+            const header = items.previousElementSibling;
+            
+            if (items.classList.contains('expanded')) {
+                items.classList.remove('expanded');
+                header.classList.add('collapsed');
+            } else {
+                items.classList.add('expanded');
+                header.classList.remove('collapsed');
+            }
+        }
+
+        // 移除已打码项
+        function removeMasked(index) {
+            const item = currentMasked[index];
+            const fullText = ocrTexts.join('');
+            currentMasked.splice(index, 1);
+            
+            // 取消OCR显示中的标记
+            const spans = document.querySelectorAll('.ocr-text');
+            for (let i = 0; i < fullText.length; i++) {
+                if (fullText.substring(i, i + item.text.length) === item.text) {
+                    for (let j = i; j < i + item.text.length && j < spans.length; j++) {
+                        spans[j].classList.remove('masked');
+                    }
+                }
+            }
+            
+            updateMaskedList();
+            showStatus('info', `已移除打码: "${item.text}"`);
+        }
+
+        // 显示状态消息
+        function showStatus(type, message) {
+            const statusBox = document.getElementById('statusBox');
+            statusBox.className = `status ${type}`;
+            statusBox.textContent = message;
+            statusBox.style.display = 'block';
+        }
+
+        // 重置演示
+        function resetDemo() {
+            currentMasked = [];
+            selectedText = null;
+            selectedContext = null;
+            sessionId = generateSessionId(); // 生成新的会话ID
+            
+            renderOcrTexts();
+            setupOcrClickHandlers();
+            
+            updateMaskedList();
+            const actionTypeInput = document.getElementById('actionType');
+            if (actionTypeInput) {
+                actionTypeInput.value = '点击文本自动判断';
+            }
+            document.getElementById('sessionIdInput').value = sessionId;
+            document.getElementById('naturalLanguage').value = '';
+            document.getElementById('requestBox').innerHTML = '<pre style="color: #666;">点击左侧文本后，这里会显示发送的请求数据</pre>';
+            document.getElementById('responseBox').innerHTML = '<pre style="color: #666;">等待API响应...</pre>';
+            document.getElementById('statusBox').style.display = 'none';
+            
+            showStatus('info', '已重置所有状态并生成新会话ID');
+        }
+    </script>
+</body>
+</html>

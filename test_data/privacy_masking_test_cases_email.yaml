@@ -1,0 +1,652 @@
+test_cases:
+  - id: 1
+    name: "商务邮件-方案确认"
+    description: "广告公司市场总监向客户发送方案确认邮件，需要分享给第三方征求意见。用户希望隐藏己方联系方式和核心创意，但保留客户信息。"
+    input_text: |
+      确认广告设计方案
+      2026-01-22 14:41:01
+      尊敬的启迪科技团队：
+      您好！希望这封邮件能找到您一切安好。我写信是为了确认我们在上次会议中讨论的广告设计方案的细节。贵团队的洞察和建议对于我们广告活动的方向非常宝贵。
+      根据我们的讨论，建议的设计将采用生动的色彩和现代字体，旨在吸引我们的目标观众的注意。我们计划在所有视觉元素中使用标语"创造无限可能"，以保持一致的品牌信息。此外，布局将优先考虑清晰和影响力，重要信息将被突出显示，确保其立即引人注目。
+      我们已经整合了贵公司李华经理的反馈，特别是关于布局调整的建议，我们相信这将增强活动的整体效果。请李经理审阅附加的草案，并确认是否符合启迪科技的期望。
+      感谢您的持续合作和信任，期待我们能一同打造一场成功的活动。
+      最诚挚的问候
+      王雷
+      市场总监
+      迅达广告有限公司
+      北京市朝阳区建国路 88 号
+      wang.lei@xundamedia.com
+      +86 138 0000 0000
+    expected_output:
+      - label: "己方姓名"
+        content: "王雷"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "+86 138 0000 0000"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "wang.lei@xundamedia.com"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "北京市朝阳区建国路 88 号"
+        should_mask: true
+      - label: "对方姓名"
+        content: "李华"
+        should_mask: false
+      - label: "对方姓名"
+        content: "李华经理"
+        should_mask: false
+      - label: "对方姓名"
+        content: "李经理"
+        should_mask: false
+      - label: "对方组织"
+        content: "启迪科技"
+        should_mask: false
+      - label: "己方组织"
+        content: "迅达广告有限公司"
+        should_mask: true
+      - label: "业务机密"
+        content: "采用生动的色彩和现代字体"
+        should_mask: true
+      - label: "业务机密"
+        content: "创造无限可能"
+        should_mask: true
+      - label: "业务机密"
+        content: "布局将优先考虑清晰和影响力"
+        should_mask: true
+    test_points:
+      - "测试同类信息差异化：多个人名中区分己方和对方"
+      - "测试语义关联：识别同一人的不同称呼"
+      - "测试主观隐私识别：识别方案中的核心创意"
+    why_traditional_fails: "传统工具只能识别所有人名和联系方式，无法区分身份和角色"
+
+  - id: 2
+    name: "商务邮件-报价洽谈"
+    description: "软件公司销售经理向客户发送报价邮件，需要分享给上级审批。用户希望隐藏成本和利润信息，但保留报价总额。"
+    input_text: |
+      关于企业管理系统项目报价
+      2026-01-25 10:15:33
+      尊敬的张总：
+      感谢您对我们云端科技的关注。根据贵公司的需求，我们为您定制了以下解决方案。
+      项目总报价为人民币 85 万元，包含系统开发、部署实施和一年技术支持。具体模块包括：人事管理模块（18万）、财务管理模块（25万）、项目管理模块（22万）、数据分析模块（20万）。
+      我们的成本控制在 52 万左右，这个报价已经给到了非常优惠的折扣，利润空间仅有 15%，远低于行业平均的 30%。考虑到贵公司是我们在制造业的标杆客户，我们愿意在此基础上再让利 3 个点。
+      张总您提到的实时库存追踪功能，我们的技术团队评估后认为这是核心亮点，建议作为一期重点开发。我们计划采用微服务架构配合 Redis 缓存，确保响应时间在 100ms 以内。
+      期待您的回复。
+      此致
+      敬礼
+      陈明
+      销售经理
+      云端科技有限公司
+      上海市浦东新区世纪大道 1500 号
+      chen.ming@cloudtech.com
+      +86 139 1234 5678
+    expected_output:
+      - label: "己方姓名"
+        content: "陈明"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "+86 139 1234 5678"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "chen.ming@cloudtech.com"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "上海市浦东新区世纪大道 1500 号"
+        should_mask: true
+      - label: "对方姓名"
+        content: "张总"
+        should_mask: false
+      - label: "己方组织"
+        content: "云端科技"
+        should_mask: true
+      - label: "己方组织"
+        content: "云端科技有限公司"
+        should_mask: true
+      - label: "业务机密"
+        content: "成本控制在 52 万左右"
+        should_mask: true
+      - label: "业务机密"
+        content: "利润空间仅有 15%"
+        should_mask: true
+      - label: "业务机密"
+        content: "远低于行业平均的 30%"
+        should_mask: true
+      - label: "业务机密"
+        content: "再让利 3 个点"
+        should_mask: true
+      - label: "业务机密"
+        content: "采用微服务架构配合 Redis 缓存"
+        should_mask: true
+      - label: "业务机密"
+        content: "响应时间在 100ms 以内"
+        should_mask: true
+    test_points:
+      - "测试商业机密识别：成本、利润、让利策略等敏感信息"
+      - "测试技术方案保护：核心技术架构和性能指标"
+      - "测试差异化处理：报价总额不打码，但成本利润打码"
+    why_traditional_fails: "传统工具无法理解哪些数字是商业机密，哪些是可公开的报价"
+
+  - id: 3
+    name: "商务邮件-融资邀请"
+    description: "创业公司CEO向投资人发送合作邀请，需要分享给团队讨论。用户希望隐藏融资计划和核心技术，但保留投资人信息。"
+    input_text: |
+      诚邀参与智能教育项目
+      2026-01-28 16:20:15
+      尊敬的李总：
+      我是慧学科技的创始人兼CEO刘洋，非常荣幸能有机会向您介绍我们的项目。
+      我们专注于K12在线教育领域，通过AI技术为学生提供个性化学习方案。目前已服务 5000+ 学生，月活跃用户增长率达 40%，用户留存率 85%。我们的核心竞争力在于自研的知识图谱算法，能够精准定位学生的薄弱环节。
+      本轮我们计划融资 800 万人民币，出让 15% 股权，主要用于技术团队扩充和市场推广。目前已有两家机构表达了明确的投资意向，估值在 5000 万左右。
+      李总您在教育行业有丰富的投资经验，特别是您投资的"学而优"项目，其发展路径与我们非常相似。如果能得到您的支持，不仅是资金上的帮助，更重要的是您的行业资源和战略指导。
+      我的联系方式是 liu.yang@huixue.com，手机 +86 138 8888 6666。期待有机会当面向您详细汇报。
+      顺祝商祺
+      刘洋
+      创始人兼CEO
+      慧学科技
+      北京市海淀区中关村大街 27 号
+    expected_output:
+      - label: "己方姓名"
+        content: "刘洋"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "+86 138 8888 6666"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "liu.yang@huixue.com"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "北京市海淀区中关村大街 27 号"
+        should_mask: true
+      - label: "对方姓名"
+        content: "李总"
+        should_mask: false
+      - label: "己方组织"
+        content: "慧学科技"
+        should_mask: true
+      - label: "业务机密"
+        content: "自研的知识图谱算法"
+        should_mask: true
+      - label: "业务机密"
+        content: "融资 800 万人民币"
+        should_mask: true
+      - label: "业务机密"
+        content: "出让 15% 股权"
+        should_mask: true
+      - label: "业务机密"
+        content: "估值在 5000 万左右"
+        should_mask: true
+      - label: "业务机密"
+        content: "已有两家机构表达了明确的投资意向"
+        should_mask: true
+    test_points:
+      - "测试融资敏感信息：金额、股权、估值、竞争情况"
+      - "测试核心技术保护：自研算法等技术机密"
+      - "测试关系判断：对方的投资案例不打码"
+    why_traditional_fails: "传统工具无法理解融资相关的敏感性，也无法区分己方技术和对方案例"
+
+  - id: 4
+    name: "商务邮件-客户投诉处理"
+    description: "客服经理回复客户投诉，需要分享给质量部门。用户希望隐藏内部处理流程和补偿成本，但保留客户问题描述。"
+    input_text: |
+      关于订单问题的处理方案
+      2026-01-30 09:45:22
+      尊敬的赵女士：
+      非常抱歉给您带来了不愉快的购物体验。关于您反馈的订单 SN202601280156 商品质量问题，我们已经进行了详细调查。
+      经核实，该批次产品确实存在包装密封不严的问题，是我们供应商环节出现了疏漏。我们已经对供应商进行了严厉警告，并要求其整改生产流程。内部我们也对质检主管老王进行了批评教育，他承认在抽检环节存在疏忽。
+      针对您的情况，我们提供以下补偿方案：1) 全额退款并额外补偿 200 元代金券；2) 免费更换新品并赠送价值 150 元的礼品。我们的成本预算是控制在 300 元以内，这个方案已经是我们能给到的最大诚意。
+      另外，我们发现同批次还有 15 个订单可能存在类似问题，已经主动联系客户进行处理，预计总损失在 5000 元左右。
+      再次为给您带来的不便深表歉意，期待您的谅解。
+      此致
+      敬礼
+      周敏
+      客服经理
+      优品商城
+      客服热线：400-888-9999
+      zhou.min@youpin.com
+      +86 137 2222 3333
+    expected_output:
+      - label: "己方姓名"
+        content: "周敏"
+        should_mask: true
+      - label: "己方姓名"
+        content: "老王"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "+86 137 2222 3333"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "zhou.min@youpin.com"
+        should_mask: true
+      - label: "对方联系方式"
+        content: "400-888-9999"
+        should_mask: false
+      - label: "对方姓名"
+        content: "赵女士"
+        should_mask: false
+      - label: "己方组织"
+        content: "优品商城"
+        should_mask: true
+      - label: "内部信息"
+        content: "对质检主管老王进行了批评教育"
+        should_mask: true
+      - label: "内部信息"
+        content: "对供应商进行了严厉警告"
+        should_mask: true
+      - label: "业务机密"
+        content: "成本预算是控制在 300 元以内"
+        should_mask: true
+      - label: "内部信息"
+        content: "同批次还有 15 个订单可能存在类似问题"
+        should_mask: true
+      - label: "内部信息"
+        content: "预计总损失在 5000 元左右"
+        should_mask: true
+    test_points:
+      - "测试内部处理流程保护：对员工的批评、供应商处理"
+      - "测试成本数据保护：补偿成本、总损失"
+      - "测试电话差异化：客服热线（公开）vs 个人手机（私密）"
+    why_traditional_fails: "传统工具无法理解内部处理流程的敏感性，也无法区分公开热线和私人电话"
+
+  - id: 5
+    name: "商务邮件-竞品分析"
+    description: "市场分析师分享竞品分析报告，需要转发给外部顾问。用户希望隐藏情报来源和己方战略，但保留竞品公开信息。"
+    input_text: |
+      竞品分析报告-智能手表市场
+      2026-02-01 14:30:00
+      各位同事：
+      根据我们的市场调研，目前智能手表市场的主要竞争对手分析如下：
+      华为Watch系列：市场份额约 28%，主打健康监测功能。他们的弱点是生态系统封闭，第三方应用较少。我们从内部渠道了解到，他们的供应链成本比我们高 15%，这给了我们价格优势。
+      小米手表：市场份额约 22%，主打性价比。根据我们的卧底反馈，他们计划在 Q2 推出高端系列，定价在 2000-3000 元区间，这将直接冲击我们的主力产品线。
+      苹果Watch：市场份额约 35%，品牌溢价明显。我们的策略是避开正面竞争，专注中端市场。
+      基于以上分析，我建议我们的新品定价在 1500 元，主打续航和运动功能。预计能抢占 8-10% 的市场份额，实现年销售额 2 亿的目标。
+      这份报告仅供内部参考，请勿外传。
+      孙杰
+      市场分析师
+      智芯科技
+      sun.jie@zhixin.com
+      +86 136 5555 7777
+    expected_output:
+      - label: "己方姓名"
+        content: "孙杰"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "+86 136 5555 7777"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "sun.jie@zhixin.com"
+        should_mask: true
+      - label: "己方组织"
+        content: "智芯科技"
+        should_mask: true
+      - label: "对方组织"
+        content: "华为"
+        should_mask: false
+      - label: "对方组织"
+        content: "小米"
+        should_mask: false
+      - label: "对方组织"
+        content: "苹果"
+        should_mask: false
+      - label: "内部信息"
+        content: "从内部渠道了解到"
+        should_mask: true
+      - label: "业务机密"
+        content: "他们的供应链成本比我们高 15%"
+        should_mask: true
+      - label: "内部信息"
+        content: "根据我们的卧底反馈"
+        should_mask: true
+      - label: "业务机密"
+        content: "他们计划在 Q2 推出高端系列，定价在 2000-3000 元区间"
+        should_mask: true
+      - label: "业务机密"
+        content: "我建议我们的新品定价在 1500 元"
+        should_mask: true
+      - label: "业务机密"
+        content: "预计能抢占 8-10% 的市场份额"
+        should_mask: true
+      - label: "业务机密"
+        content: "实现年销售额 2 亿的目标"
+        should_mask: true
+      - label: "业务机密"
+        content: "避开正面竞争，专注中端市场"
+        should_mask: true
+    test_points:
+      - "测试竞品信息差异化：公开数据不打码，特殊渠道获取的机密打码"
+      - "测试情报来源保护：'内部渠道'、'卧底反馈'"
+      - "测试战略判断保护：己方的定价、目标、策略"
+    why_traditional_fails: "传统工具无法区分公开的市场数据和通过特殊渠道获取的机密信息"
+
+  - id: 6
+    name: "商务邮件-人员评价"
+    description: "HR经理向上级汇报员工评估，需要分享给其他部门负责人。用户希望隐藏对员工的负面评价和薪资信息。"
+    input_text: |
+      2025年度员工绩效评估报告
+      2026-02-03 11:20:45
+      尊敬的王总：
+      现将技术部年度绩效评估情况汇报如下：
+      整体表现：技术部 25 人，优秀 8 人，良好 12 人，合格 4 人，待改进 1 人。团队整体战斗力较强。
+      重点人员：
+      1. 张伟（架构师）：技术能力突出，主导了三个核心项目，建议晋升为技术总监，薪资从 35K 调整至 50K。
+      2. 李娜（前端组长）：工作态度积极，但管理能力有待提升，团队成员反馈她经常情绪化，影响团队氛围。建议保持现职，薪资微调至 28K。
+      3. 赵强（后端开发）：这是待改进的那一位，代码质量差，多次延误项目进度，与同事关系紧张。建议列入淘汰名单，如果 Q1 仍无改善，建议劝退。
+      薪资调整预算：技术部总薪资从 65 万/月调整至 72 万/月，增幅 10.8%。
+      以上请您审阅。
+      此致
+      敬礼
+      林芳
+      人力资源经理
+      创新科技有限公司
+      lin.fang@chuangxin.com
+      +86 135 6666 8888
+    expected_output:
+      - label: "己方姓名"
+        content: "林芳"
+        should_mask: true
+      - label: "己方姓名"
+        content: "张伟"
+        should_mask: true
+      - label: "己方姓名"
+        content: "李娜"
+        should_mask: true
+      - label: "己方姓名"
+        content: "赵强"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "+86 135 6666 8888"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "lin.fang@chuangxin.com"
+        should_mask: true
+      - label: "对方姓名"
+        content: "王总"
+        should_mask: false
+      - label: "己方组织"
+        content: "创新科技有限公司"
+        should_mask: true
+      - label: "业务机密"
+        content: "薪资从 35K 调整至 50K"
+        should_mask: true
+      - label: "业务机密"
+        content: "薪资微调至 28K"
+        should_mask: true
+      - label: "业务机密"
+        content: "技术部总薪资从 65 万/月调整至 72 万/月"
+        should_mask: true
+      - label: "内部信息"
+        content: "管理能力有待提升，团队成员反馈她经常情绪化，影响团队氛围"
+        should_mask: true
+      - label: "内部信息"
+        content: "代码质量差，多次延误项目进度，与同事关系紧张"
+        should_mask: true
+      - label: "内部信息"
+        content: "建议列入淘汰名单，如果 Q1 仍无改善，建议劝退"
+        should_mask: true
+    test_points:
+      - "测试人员评价保护：对员工的负面评价和敏感反馈"
+      - "测试薪资信息保护：个人薪资和部门薪资总额"
+      - "测试人事决策保护：晋升、劝退等敏感决策"
+    why_traditional_fails: "传统工具无法理解人员评价的敏感性，也无法识别哪些是负面评价"
+
+  - id: 7
+    name: "商务邮件-供应商谈判"
+    description: "采购经理向供应商发送谈判邮件，需要分享给财务审核。用户希望隐藏己方预算和谈判策略，但保留供应商报价。"
+    input_text: |
+      关于原材料采购合作事宜
+      2026-02-05 15:10:30
+      尊敬的陈总：
+      感谢贵公司提供的报价方案。针对 A 级钢材采购，贵司报价为 5800 元/吨，我们认为价格偏高。
+      根据我们的市场调研，同等品质的钢材市场价在 5200-5400 元/吨之间。我们的预算上限是 5500 元/吨，但对外我们会说只能接受 5300 元/吨，给自己留一些谈判空间。
+      考虑到我们是长期合作伙伴，年采购量在 500 吨以上，希望贵司能给到更优惠的价格。我们的底线是 5500 元/吨，如果能做到 5400 元/吨，我们可以立即签订全年合同。
+      另外，我们内部测算过，如果价格超过 5600 元/吨，我们会考虑切换到华东钢铁，他们给我们的报价是 5450 元/吨，虽然质量略逊一筹，但性价比更高。
+      期待您的回复。
+      此致
+      敬礼
+      吴刚
+      采购经理
+      制造集团有限公司
+      wu.gang@zhizao.com
+      +86 134 7777 9999
+    expected_output:
+      - label: "己方姓名"
+        content: "吴刚"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "+86 134 7777 9999"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "wu.gang@zhizao.com"
+        should_mask: true
+      - label: "对方姓名"
+        content: "陈总"
+        should_mask: false
+      - label: "己方组织"
+        content: "制造集团有限公司"
+        should_mask: true
+      - label: "对方组织"
+        content: "华东钢铁"
+        should_mask: true
+      - label: "业务机密"
+        content: "我们的预算上限是 5500 元/吨"
+        should_mask: true
+      - label: "业务机密"
+        content: "对外我们会说只能接受 5300 元/吨"
+        should_mask: true
+      - label: "业务机密"
+        content: "我们的底线是 5500 元/吨"
+        should_mask: true
+      - label: "业务机密"
+        content: "如果能做到 5400 元/吨"
+        should_mask: true
+      - label: "业务机密"
+        content: "如果价格超过 5600 元/吨，我们会考虑切换到华东钢铁"
+        should_mask: true
+      - label: "业务机密"
+        content: "他们给我们的报价是 5450 元/吨"
+        should_mask: true
+    test_points:
+      - "测试谈判策略保护：真实预算、对外口径、底线、备选方案"
+      - "测试竞争信息保护：备选供应商和其报价"
+      - "测试价格差异化：对方报价不打码，己方预算和策略打码"
+    why_traditional_fails: "传统工具无法理解谈判策略的敏感性，也无法区分对方报价和己方预算"
+
+  - id: 8
+    name: "商务邮件-项目进度汇报"
+    description: "项目经理向客户汇报进度，需要分享给内部团队。用户希望隐藏内部问题和团队矛盾，但保留客户可见的进度。"
+    input_text: |
+      项目进度周报（第8周）
+      2026-02-07 17:30:00
+      尊敬的刘总：
+      本周项目进展情况汇报如下：
+      已完成工作：用户管理模块开发完成，通过测试，符合需求文档要求。数据库优化工作完成 80%，性能提升明显。
+      进行中工作：支付模块开发中，预计下周完成。前端页面优化进行中。
+      存在问题：支付模块因为第三方接口文档不清晰，进度略有延误。我们已经与支付宝技术支持沟通，预计不会影响整体交付时间。
+      实际上，内部问题比较严重。后端开发小李和前端开发小王因为接口规范问题吵了一架，现在两人互不配合，严重影响进度。测试组长老张也抱怨开发质量太差，返工率高达 40%。我们内部评估，如果这个状态持续，项目可能要延期 2 周。
+      但对客户我们不能这么说，我们会想办法内部消化这些问题，确保按时交付。
+      下周计划：完成支付模块开发和测试，启动系统集成测试。
+      如有任何疑问，欢迎随时联系。
+      此致
+      敬礼
+      马超
+      项目经理
+      软件开发有限公司
+      ma.chao@software.com
+      +86 133 8888 6666
+    expected_output:
+      - label: "己方姓名"
+        content: "马超"
+        should_mask: true
+      - label: "己方姓名"
+        content: "小李"
+        should_mask: true
+      - label: "己方姓名"
+        content: "小王"
+        should_mask: true
+      - label: "己方姓名"
+        content: "老张"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "+86 133 8888 6666"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "ma.chao@software.com"
+        should_mask: true
+      - label: "对方姓名"
+        content: "刘总"
+        should_mask: false
+      - label: "己方组织"
+        content: "软件开发有限公司"
+        should_mask: true
+      - label: "内部信息"
+        content: "后端开发小李和前端开发小王因为接口规范问题吵了一架，现在两人互不配合"
+        should_mask: true
+      - label: "内部信息"
+        content: "测试组长老张也抱怨开发质量太差，返工率高达 40%"
+        should_mask: true
+      - label: "内部信息"
+        content: "我们内部评估，如果这个状态持续，项目可能要延期 2 周"
+        should_mask: true
+      - label: "内部信息"
+        content: "但对客户我们不能这么说，我们会想办法内部消化这些问题"
+        should_mask: true
+    test_points:
+      - "测试内部问题保护：团队矛盾、质量问题、延期风险"
+      - "测试内部人员保护：涉及矛盾的员工姓名"
+      - "测试内部策略保护：对客户的应对策略"
+    why_traditional_fails: "传统工具无法理解哪些是可对外的进度信息，哪些是需要保密的内部问题"
+
+  - id: 9
+    name: "商务邮件-合作终止通知"
+    description: "法务经理向合作方发送终止通知，需要分享给管理层。用户希望隐藏终止真实原因和新供应商信息。"
+    input_text: |
+      关于终止合作协议的通知
+      2026-02-10 10:00:00
+      尊敬的黄总：
+      根据我们双方于 2024 年 3 月 15 日签订的《战略合作协议》第 8.2 条款，任何一方可提前 30 天书面通知对方终止合作。
+      经我司慎重考虑，决定自 2026 年 3 月 15 日起终止与贵司的合作关系。我们将按照协议约定，完成现有订单的交付，并结清所有款项。
+      表面上我们说是战略调整，实际上是因为贵司产品质量问题频发，客户投诉率高达 15%，严重影响我们的品牌形象。我们内部开会讨论过，黄总这个人不靠谱，承诺的改进措施从来不落实，继续合作只会给我们带来更大损失。
+      另外，我们已经找到了新的供应商，价格比你们低 20%，质量还更好。这个信息暂时不要透露，等合作正式终止后再公布。
+      感谢过去两年的合作，祝贵司业务蒸蒸日上。
+      此致
+      敬礼
+      钱伟
+      法务经理
+      商贸有限公司
+      qian.wei@shangmao.com
+      +86 132 9999 7777
+    expected_output:
+      - label: "己方姓名"
+        content: "钱伟"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "+86 132 9999 7777"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "qian.wei@shangmao.com"
+        should_mask: true
+      - label: "对方姓名"
+        content: "黄总"
+        should_mask: false
+      - label: "己方组织"
+        content: "商贸有限公司"
+        should_mask: true
+      - label: "内部信息"
+        content: "实际上是因为贵司产品质量问题频发，客户投诉率高达 15%"
+        should_mask: true
+      - label: "内部信息"
+        content: "黄总这个人不靠谱，承诺的改进措施从来不落实"
+        should_mask: true
+      - label: "内部信息"
+        content: "我们内部开会讨论过"
+        should_mask: true
+      - label: "业务机密"
+        content: "我们已经找到了新的供应商，价格比你们低 20%，质量还更好"
+        should_mask: true
+      - label: "业务机密"
+        content: "这个信息暂时不要透露，等合作正式终止后再公布"
+        should_mask: true
+    test_points:
+      - "测试终止原因保护：真实原因 vs 对外说辞"
+      - "测试负面评价保护：对合作方的负面评价"
+      - "测试商业策略保护：新供应商信息和保密策略"
+    why_traditional_fails: "传统工具无法区分正式的合同条款和内部的真实想法"
+
+  - id: 10
+    name: "商务邮件-招聘录用通知"
+    description: "HR向候选人发送offer，需要分享给招聘团队。用户希望隐藏薪资和内部评价，但保留职位描述。"
+    input_text: |
+      关于高级Java工程师职位的录用通知
+      2026-02-12 14:20:00
+      尊敬的李明先生：
+      感谢您参加我们公司的面试。经过综合评估，我们非常高兴地通知您，您已通过面试，我们诚挚邀请您加入科技创新有限公司。
+      职位：高级Java工程师
+      部门：技术研发部
+      汇报对象：技术总监张伟
+      薪资待遇：月薪 28,000 元（税前），年终奖 3-6 个月，五险一金，带薪年假 15 天
+      入职时间：2026 年 3 月 1 日
+      内部评估：李明技术能力不错，但沟通能力一般，面试时有点紧张。我们原本预算是 25K，但考虑到市场行情和他的经验，最终给到了 28K。技术总监老张说这个价格有点高，但可以接受。如果他提出要 30K，我们是不会同意的。
+      另外，我们同时还在面试另外两个候选人，如果李明不接受，我们还有备选方案。候选人王芳的期望薪资是 26K，性价比更高，但技术稍弱一些。
+      请您在收到本邮件后 3 个工作日内回复是否接受此offer。如有任何疑问，欢迎随时联系我。
+      期待您的加入！
+      此致
+      敬礼
+      赵敏
+      人力资源经理
+      科技创新有限公司
+      北京市海淀区中关村软件园
+      zhao.min@keji.com
+      +86 131 6666 5555
+    expected_output:
+      - label: "己方姓名"
+        content: "赵敏"
+        should_mask: true
+      - label: "己方姓名"
+        content: "张伟"
+        should_mask: true
+      - label: "己方姓名"
+        content: "老张"
+        should_mask: true
+      - label: "己方姓名"
+        content: "王芳"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "+86 131 6666 5555"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "zhao.min@keji.com"
+        should_mask: true
+      - label: "己方联系方式"
+        content: "北京市海淀区中关村软件园"
+        should_mask: true
+      - label: "对方姓名"
+        content: "李明"
+        should_mask: false
+      - label: "己方组织"
+        content: "科技创新有限公司"
+        should_mask: true
+      - label: "业务机密"
+        content: "月薪 28,000 元（税前）"
+        should_mask: true
+      - label: "业务机密"
+        content: "年终奖 3-6 个月"
+        should_mask: true
+      - label: "业务机密"
+        content: "我们原本预算是 25K"
+        should_mask: true
+      - label: "业务机密"
+        content: "如果他提出要 30K，我们是不会同意的"
+        should_mask: true
+      - label: "内部信息"
+        content: "李明技术能力不错，但沟通能力一般，面试时有点紧张"
+        should_mask: true
+      - label: "内部信息"
+        content: "技术总监老张说这个价格有点高，但可以接受"
+        should_mask: true
+      - label: "内部信息"
+        content: "候选人王芳的期望薪资是 26K，性价比更高，但技术稍弱一些"
+        should_mask: true
+    test_points:
+      - "测试薪资信息保护：具体薪资、年终奖、预算、谈判底线"
+      - "测试候选人评价保护：对候选人的内部评价"
+      - "测试招聘策略保护：备选候选人信息和比较"
+      - "测试人员差异化：候选人姓名不打码，内部人员和备选候选人打码"
+    why_traditional_fails: "传统工具无法理解招聘过程中的敏感信息，也无法区分候选人和内部人员"
