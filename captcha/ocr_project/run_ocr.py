@@ -62,8 +62,12 @@ import time
 import torch
 
 
-from mineru.backend.pipeline.model_init import ocr_model_init
+from mineru.model.ocr.paddleocr2pytorch.pytorch_paddle import PytorchPaddleOCR
 from mineru.utils.post_char_bbox_converter import PostCharBboxConverter
+
+
+def create_ocr_model(languages: str, det_db_box_thresh: float = 0.3):
+    return PytorchPaddleOCR(lang=languages, det_db_box_thresh=det_db_box_thresh)
 
 def main():
     # 支持命令行参数传入图片路径
@@ -105,10 +109,7 @@ def main():
     
     # Initialize OCR model with specified languages
     try:
-        ocr_model = ocr_model_init(lang=args.languages, det_db_box_thresh=0.3)
-        # Update device if possible, though ocr_model_init might have set it. 
-        # PytorchPaddleOCR takes device in kwargs, and ocr_model_init passes kwargs. 
-        # ocr_model.device = device # might not work if internally managed, but PytorchPaddleOCR handles it.
+        ocr_model = create_ocr_model(args.languages, det_db_box_thresh=0.3)
     except Exception as e:
         print(f"Error initializing model: {e}")
         import traceback
