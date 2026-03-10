@@ -72,3 +72,33 @@ $RECYCLE.BIN/
 # 8. 各种日志文件
 # ==========================================
 *.log
+
+# ==========================================
+# 9. Python / OCR 微服务（captcha）本地环境与产物
+# ==========================================
+# 通用 Python 缓存/字节码
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# 虚拟环境（仓库根 & captcha 子目录）
+.venv/
+venv/
+captcha/.venv/
+
+# dotenv（本地配置/密钥）
+.env
+captcha/.env
+
+# OCR 运行产物/临时文件
+captcha/ocr_project/result.json
+captcha/temp_ocr_*.jpg
+
+# mineru 本地构建/打包/输出目录（通常为生成物）
+captcha/mineru-master/build/
+captcha/mineru-master/mineru.egg-info/
+captcha/mineru-master/mineru_out/

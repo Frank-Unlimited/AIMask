@@ -1,0 +1,10 @@
+$ErrorActionPreference = "Stop"
+
+Set-Location $PSScriptRoot
+
+if (-not (Test-Path ".venv")) {
+    python -m venv .venv
+}
+
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m uvicorn ocr_project.ocr_service:app --host 0.0.0.0 --port 8000
